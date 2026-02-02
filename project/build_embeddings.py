@@ -1,6 +1,6 @@
 # build_embeddings.py
 import pandas as pd
-import txtai
+from txtai import Embeddings
 
 
 def build(
@@ -13,21 +13,28 @@ def build(
     if unnamed_cols:
         df = df.drop(columns=unnamed_cols)
 
-    df = df.dropna(subset=["title", "text", "domain", "source"])
+    df = df.dropna(subset=["title", "text", "domain", "source"]).reset_index(drop=True)
 
-    # Create documents to embed
-    # Option A: embed text only
-    documents = df["text"].tolist()
+    records = []
+    for i, row in df.iterrows():
+        text = str(row["text"])
+        metadata = {
+            "title": str(row["title"]),
+            "domain": str(row["domain"]),
+            "source": str(row["source"]),
+        }
+        records.append((i, text, metadata))
 
-    # Option B: embed title + text (often better)
-    # documents = (df["title"].astype(str) + " — " + df["text"].astype(str)).tolist()
-
-    embeddings = txtai.Embeddings({"path": "sentence-transformers/all-MiniLM-L6-v2"})
-    embeddings.index(documents)
+    embeddings = Embeddings(
+        path= "sentence-transformers/all-MiniLM-L6-v2",
+        # content=True, When RAG is used
+        function="sentence",
+        # graph= {'domain':'domain'} ChatGPT says deadend and useless
+    )
+    embeddings.index(records)
     embeddings.save(out_path)
 
-    print(f"Saved embeddings to {out_path} with {len(documents)} documents.")
-
+    print(f"Saved embeddings to {out_path} with {len(records)} documents.")
 
 if __name__ == "__main__":
     build()

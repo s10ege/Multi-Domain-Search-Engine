@@ -2,10 +2,10 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Optional, Union
 
 import pandas as pd
-import txtai
+from txtai import Embeddings
 
 
 @dataclass(frozen=True)
@@ -14,8 +14,7 @@ class SearchResources:
     texts: list
     domains: list
     sources: list
-    embeddings: txtai.Embeddings
-
+    embeddings: Embeddings
 
 def load_resources(
     csv_path: str = "final_data.csv",
@@ -30,37 +29,59 @@ def load_resources(
         df = df.drop(columns=unnamed_cols)
 
     # Drop rows with missing core fields (adjust as needed)
-    df = df.dropna(subset=["title", "text", "domain", "source"])
+    df = df.dropna(subset=["title", "text", "domain", "source"]).reset_index(drop=True)
 
     titles = df["title"].tolist()
     texts = df["text"].tolist()
     domains = df["domain"].tolist()
     sources = df["source"].tolist()
 
-    embeddings = txtai.Embeddings({"path": "sentence-transformers/all-MiniLM-L6-v2"})
+    embeddings = Embeddings({"path": "sentence-transformers/all-MiniLM-L6-v2"})
     embeddings.load(embeddings_path)
 
     return SearchResources(titles, texts, domains, sources, embeddings)
+    
 
 
 def search(
     resources: SearchResources,
     query: str,
     top_k: int = 5,
-) -> List[Dict[str, Any]]:
-    results = resources.embeddings.search(query, top_k)
+    domain: Optional[Union[str, list[str]]] = None,
+):
+    # Pull more candidates than needed
+    candidate_k = max(top_k * 30, 50)
+    raw = resources.embeddings.search(query, candidate_k)  # [(idx, score)]
 
-    # results entries typically like: [(idx, score), ...]
-    output: List[Dict[str, Any]] = []
-    for idx, score in results:
-        output.append(
+    # Normalise domain filter
+    domain_set = None
+    if domain is not None:
+        if isinstance(domain, str):
+            domain_set = {domain.strip().lower()}
+        else:
+            domain_set = {d.strip().lower() for d in domain}
+
+    results = []
+    for idx, score in raw:
+        idx = int(idx)
+        doc_domain = str(resources.domains[idx]).strip().lower()
+
+        if domain_set is not None and doc_domain not in domain_set:
+            continue
+
+        results.append(
             {
                 "title": resources.titles[idx],
                 "text": resources.texts[idx],
                 "domain": resources.domains[idx],
                 "source": resources.sources[idx],
                 "score": float(score),
-                "index": int(idx),
+                "index": idx,
             }
         )
-    return output
+
+        if len(results) >= top_k:
+            break
+
+    return results
+
