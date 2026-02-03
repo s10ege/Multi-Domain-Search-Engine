@@ -1,0 +1,22 @@
+{
+  "path": "sentence-transformers/all-MiniLM-L6-v2",
+  "content": true,
+  "scoring": {
+    "method": "bm25",
+    "terms": true
+  },
+  "function": "sentence",
+  "dimensions": 384,
+  "backend": "faiss",
+  "offset": 9000,
+  "build": {
+    "create": "2026-02-03T00:42:31Z",
+    "python": "3.14.0",
+    "settings": {
+      "components": "IVF230,Flat"
+    },
+    "system": "Windows (AMD64)",
+    "txtai": "9.4.1"
+  },
+  "update": "2026-02-03T00:42:31Z"
+}
