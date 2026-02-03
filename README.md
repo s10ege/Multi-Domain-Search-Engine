@@ -13,6 +13,7 @@ Results include title, domain, source, score, and index.
 CLI Menu
 
 Search — standard semantic search.
+
 RAG / Answer mode — returns an answer plus context results.
 Summarize top‑k — summarizes retrieved results.
 Find similar to a result — selects a prior result and finds related docs.
