@@ -1,0 +1,13 @@
+Plan:
+
+- When everything is finished, start the report for frontend
+- At the end, focus on better styling and better code practice implementation.
+
+
+
+iframe: it can show other webpages inside this website
+login page: st.secrets, st.login, st.logout, st.user
+
+Move all the code to a new project, or clean up. 
+Before cleaning, note everything down to tell on 
+design considerations.

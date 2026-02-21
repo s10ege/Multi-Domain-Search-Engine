@@ -1,0 +1,407 @@
+/* =========================
+   Modern Streamlit Theme CSS
+   ========================= */
+
+/* Google Fonts (keep: Outfit + Manrope; add Inter as fallback-friendly body option) */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap");
+
+/* ---------- App Shell ---------- */
+.stApp {
+  color: rgba(235, 241, 255, 0.96);
+  font-family: "Manrope", "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background:
+    radial-gradient(900px 600px at 15% 0%, rgba(79, 140, 255, 0.22), transparent 55%),
+    radial-gradient(800px 540px at 85% 5%, rgba(124, 77, 255, 0.18), transparent 55%),
+    radial-gradient(600px 380px at 50% 35%, rgba(255, 255, 255, 0.05), transparent 60%),
+    linear-gradient(180deg, #0f1930, #0b1220 40%, #070b14);
+}
+
+/* Make Markdown + labels use body font consistently */
+.stApp p,
+.stApp li,
+.stApp label,
+.stApp [data-testid="stMarkdownContainer"] {
+  font-family: "Manrope", "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  letter-spacing: 0.01em;
+}
+
+/* Headings */
+.stApp h1,
+.stApp h2,
+.stApp h3,
+.stApp [data-testid="stSidebar"] h1,
+.stApp [data-testid="stSidebar"] h2,
+.stApp [data-testid="stSidebar"] h3 {
+  font-family: "Outfit", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+.stApp h1 { font-size: clamp(1.45rem, 1.2rem + 1.0vw, 1.9rem); font-weight: 800; line-height: 1.15; }
+.stApp h2 { font-size: clamp(1.15rem, 1.0rem + 0.7vw, 1.45rem); font-weight: 750; line-height: 1.15; margin-left:0.50rem; }
+.stApp h3 { font-size: clamp(1.02rem, 0.95rem + 0.3vw, 1.18rem); font-weight: 700; line-height: 1.15; }
+
+/* Widget labels */
+[data-testid="stWidgetLabel"] p,
+.stApp .stRadio label,
+.stApp .stSelectbox label,
+.stApp .stTextInput label,
+.stApp .stSlider label {
+  font-size: 0.94rem;
+  line-height: 1.5;
+  color: rgba(163, 179, 209, 0.86);
+}
+
+/* ---------- Reusable type helpers (for your custom HTML blocks) ---------- */
+.type-h1 { font-family: "Outfit", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; font-size: clamp(1.45rem, 1.2rem + 1.0vw, 1.9rem); font-weight: 800; line-height: 1.15; }
+.type-h2 { font-family: "Outfit", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; font-size: clamp(1.15rem, 1.0rem + 0.7vw, 1.45rem); font-weight: 750; line-height: 1.15; }
+.type-h3 { font-family: "Outfit", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; font-size: clamp(1.02rem, 0.95rem + 0.3vw, 1.18rem); font-weight: 700; line-height: 1.15; }
+
+.type-body  { font-family: "Manrope", "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; font-size: 1rem; line-height: 1.5; }
+.type-short { font-family: "Manrope", "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; font-size: 0.94rem; line-height: 1.7; }
+.type-caption, .type-meta {
+  font-family: "Manrope", "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-size: 0.84rem;
+  line-height: 1.5;
+  color: rgba(163, 179, 209, 0.86);
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  background:
+    linear-gradient(135deg, rgba(38, 68, 126, 0.336), rgba(23, 13, 51, 0.1)),
+    rgba(255, 255, 255, 0.11);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 35px;
+  padding: 1.1rem calc(1.1rem + 0.2rem);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.hero__eyebrow {
+  color: rgba(255, 255, 255, 0.92);
+  text-transform: uppercase;
+  letter-spacing: 0.26em;
+  margin-bottom: 0.55rem;
+  font-family: "Outfit", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-size: 0.84rem;
+  font-weight: 650;
+}
+
+.hero__title {
+  text-align: center;
+  color: rgba(235, 241, 255, 0.96);
+  font-family: "Outfit", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-size: clamp(1.9rem, 1.4rem + 1.8vw, 2.6rem);
+  font-weight: 800;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.hero__subtitle {
+  color: rgba(163, 179, 209, 0.86);
+  margin: 0.55rem auto 0;
+  max-width: 760px;
+  font-size: 1rem;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.stheader >header{
+  color: rgba(255, 255, 255, 0.92);
+  text-transform: uppercase;
+  letter-spacing: 0.26em;
+  margin-bottom: 0.55rem;
+  font-family: "Outfit", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-size: 0.84rem;
+  font-weight: 650;
+}
+
+/* Titles */
+.page-title { margin: 0 0 0.55rem; }
+.section-title { margin: 1.45rem 0 0.8rem; }
+
+/* ---------- Scoped form template (st.container(key="search_form")) ---------- */
+.st-key-search_form {
+  border: 1px solid rgba(253, 253, 253, 0.12);
+  border-radius: 15px;
+  background: linear-gradient(135deg, rgba(38, 68, 126, 0.336), rgba(23, 13, 51, 0.1)),
+  rgba(255, 255, 255, 0.11);
+  padding: 1.1rem;
+  margin-top: 0.8rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.st-key-search_form [data-testid="stWidgetLabel"] p,
+.st-key-search_form .stRadio label,
+.st-key-search_form .stSelectbox label,
+.st-key-search_form .stTextInput label,
+.st-key-search_form .stSlider label {
+  font-size: 0.94rem;
+  line-height: 1.5;
+  font-weight: 650;
+  text-align: center;
+  color: rgba(189, 192, 201, 0.74);
+}
+
+/* Inputs */
+.st-key-search_form .stTextInput input,
+.st-key-search_form textarea,
+.st-key-search_form .stSelectbox div[data-baseweb="select"] > div {
+  font-family: "Manrope", "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  border-radius: 14px !important;
+}
+
+/* Keep Search + Reset actions aligned */
+.st-key-search_form_actions [data-testid="stHorizontalBlock"] {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.55rem;
+}
+
+.st-key-search_form_actions [data-testid="column"] {
+  flex: 1 1 0 !important;
+  min-width: 0 !important;
+}
+
+.st-key-search_form_actions .search-actions-caption {
+  text-align: center;
+  margin: 0 0 0.55rem;
+}
+
+.st-key-search_form_actions [data-testid="column"] > div {
+  display: flex;
+  align-items: stretch;
+}
+.st-key-search_form_actions .stFormSubmitButton { width: 100%; }
+.st-key-search_form_actions .stFormSubmitButton > button { min-height: 2.8rem; }
+
+/* ---------- Modern radio group (inside form) ---------- */
+.st-key-search_form .stRadio > div[role="radiogroup"] {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.st-key-search_form .stRadio > div[role="radiogroup"] > label {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  padding: 0.55rem 0.75rem;
+  background: rgba(255, 255, 255, 0.03);
+  transition: transform 120ms cubic-bezier(.2,.8,.2,1),
+              background 180ms cubic-bezier(.2,.8,.2,1),
+              border-color 180ms cubic-bezier(.2,.8,.2,1),
+              box-shadow 180ms cubic-bezier(.2,.8,.2,1);
+}
+
+.st-key-search_form .stRadio > div[role="radiogroup"] > label:hover {
+  border-color: rgba(79, 140, 255, 0.45);
+  background: rgba(79, 140, 255, 0.10);
+  transform: translateY(-1px);
+}
+
+.st-key-search_form .stRadio input[type="radio"] {
+  accent-color: #4f8cff;
+}
+
+.st-key-search_form .stRadio > div[role="radiogroup"] > label:has(input[type="radio"]:checked) {
+  border-color: rgba(79, 140, 255, 0.70);
+  background: rgba(79, 140, 255, 0.14);
+  box-shadow: inset 0 0 0 1px rgba(79, 140, 255, 0.25);
+}
+
+.st-key-search_form .stRadio > div[role="radiogroup"] > label:has(input[type="radio"]:focus-visible) {
+  box-shadow: 0 0 0 3px rgba(79, 140, 255, 0.28);
+}
+
+/* ---------- Buttons (Streamlit) ---------- */
+.stButton > button,
+.stFormSubmitButton > button {
+  font-family: "Manrope", "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-size: 0.94rem;
+  font-weight: 700;
+  line-height: 1.1;
+  border-radius: 999px;
+  padding: 0.68rem 1rem;
+  border: 3px solid rgba(79, 140, 255, 0.50);
+  color: rgba(235, 241, 255, 0.96);
+
+  background:
+    radial-gradient(120% 120% at 20% 0%, rgba(255,255,255,0.18), transparent 40%),
+    linear-gradient(180deg, rgba(79, 140, 255, 0.34), rgba(79, 140, 255, 0.18));
+
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.22);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition: transform 120ms cubic-bezier(.2,.8,.2,1),
+              box-shadow 180ms cubic-bezier(.2,.8,.2,1),
+              filter 180ms cubic-bezier(.2,.8,.2,1);
+}
+
+/* Secondary button variant (works for normal and form-submit secondary buttons) */
+.stButton > button[kind*="secondary"],
+.stFormSubmitButton > button[kind*="secondary"] {
+  border-color: rgba(255, 255, 255, 0.24);
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.16);
+}
+
+.stButton > button[kind*="secondary"]:hover,
+.stFormSubmitButton > button[kind*="secondary"]:hover {
+  background: rgba(255, 255, 255, 0.10);
+  filter: none;
+}
+
+.stButton > button:hover,
+.stFormSubmitButton > button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
+  filter: brightness(1.05);
+}
+
+.stButton > button:active,
+.stFormSubmitButton > button:active {
+  transform: translateY(0);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.22);
+  filter: brightness(0.98);
+}
+
+.stButton > button:focus-visible,
+.stFormSubmitButton > button:focus-visible {
+  outline: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25), 0 0 0 3px rgba(79, 140, 255, 0.28);
+}
+
+.stButton > button:disabled,
+.stFormSubmitButton > button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+  filter: none;
+}
+
+/* Make form buttons full-width if desired */
+.st-key-search_form .stButton > button,
+.st-key-search_form .stFormSubmitButton > button {
+  width: 100%;
+}
+
+/* In search actions, let button outline size to its label text */
+.st-key-search_form_actions .stFormSubmitButton {
+  width: auto !important;
+}
+
+.st-key-search_form_actions .stFormSubmitButton > button {
+  width: fit-content !important;
+  min-width: max-content;
+  overflow: visible;
+  text-overflow: clip;
+}
+
+/* ---------- Utility containers ---------- */
+.answer-box {
+  border: 1px solid rgba(140, 171, 255, 0.35);
+  border-radius: 18px;
+  background: rgba(20, 30, 51, 0.70);
+  padding: 1.1rem;
+  color: rgba(235, 241, 255, 0.96);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.22);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.result-card {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  background: rgba(20, 30, 51, 0.78);
+  padding: 1.1rem;
+  margin-bottom: 0.8rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.20);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.result-card__meta { color: rgba(157, 182, 255, 0.92); font-size: 0.84rem; }
+.result-card__title { margin: 0.35rem 0 0.55rem; color: rgba(235, 241, 255, 0.96); }
+
+.result-card__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 0.55rem;
+}
+
+.chip {
+  background: rgba(30, 42, 68, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: rgba(207, 224, 255, 0.92);
+  padding: 0.22rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.84rem;
+}
+
+.result-card__snippet {
+  margin: 0;
+  color: rgba(212, 221, 243, 0.92);
+  line-height: 1.7;
+}
+
+/* ---------- Auth cards (login / signup) ---------- */
+.st-key-login_card,
+.st-key-signup_card {
+  border: 1px solid rgba(253, 253, 253, 0.12);
+  border-radius: 15px;
+  background:
+    linear-gradient(135deg, rgba(38, 68, 126, 0.336), rgba(23, 13, 51, 0.1)),
+    rgba(255, 255, 255, 0.11);
+  padding: 1.5rem;
+  margin: 0 auto;
+  max-width: 460px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* "or" divider between GitHub button and password form */
+.auth-divider {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 1rem 0;
+  color: rgba(163, 179, 209, 0.6);
+  font-family: "Manrope", "Inter", system-ui, sans-serif;
+  font-size: 0.84rem;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* Full-width buttons inside auth cards */
+.st-key-login_card .stButton > button,
+.st-key-signup_card .stButton > button,
+.st-key-login_card .stFormSubmitButton > button,
+.st-key-signup_card .stFormSubmitButton > button {
+  width: 100%;
+}
+
+/* Inputs inside auth cards */
+.st-key-login_card .stTextInput input,
+.st-key-signup_card .stTextInput input {
+  border-radius: 14px !important;
+  font-family: "Manrope", "Inter", system-ui, sans-serif;
+}
+
+/* ---------- Accessibility & Motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; scroll-behavior: auto !important; }
+}

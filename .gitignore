@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Streamlit secrets (contains credentials — never commit)
+.streamlit/secrets.toml
+**/streamlit_app/.streamlit/secrets.toml
+
+# Databases
+*.db
+
+# Embeddings (large binary files — regenerate locally)
+backend/embeddings/
+
+# Logs
+*.log
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
