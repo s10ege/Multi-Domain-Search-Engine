@@ -13,7 +13,7 @@ from unittest.mock import Mock, patch, MagicMock
 import tempfile
 import shutil
 
-from backend.src.client_app.build_embeddings import build
+from backend.src.build_embeddings import build
 
 
 class TestBuildEmbeddings:
@@ -45,7 +45,7 @@ class TestBuildEmbeddings:
 
     # CRITICAL TESTS - Core functionality
 
-    @patch('src.build_embeddings.Embeddings')
+    @patch('backend.src.build_embeddings.Embeddings')
     def test_build_creates_embeddings_successfully(self, mock_embeddings_class, temp_csv, temp_dir):
         """
         Test that build() successfully creates and saves embeddings from a valid CSV
@@ -64,11 +64,11 @@ class TestBuildEmbeddings:
         call_args = mock_embeddings_class.call_args
         config = call_args[0][0] if call_args[0] else call_args[1]
         
-        assert config['path'] == 'sentence-transformers/all-MiniLM-L6-v2'
+        assert config['path'] == 'BAAI/bge-small-en-v1.5'
         assert config['content'] is True
         assert config['scoring']['method'] == 'bm25'
         assert config['scoring']['terms'] is True
-        assert config['function'] == 'sentence'
+        assert config['instructions']['query'].startswith('Represent this sentence')
         
         # Verify index was called with records
         mock_embeddings_instance.index.assert_called_once()
@@ -79,7 +79,7 @@ class TestBuildEmbeddings:
         mock_embeddings_instance.save.assert_called_once_with(out_path)
         mock_embeddings_instance.close.assert_called_once()
 
-    @patch('src.build_embeddings.Embeddings')
+    @patch('backend.src.build_embeddings.Embeddings')
     def test_build_removes_unnamed_columns(self, mock_embeddings_class, temp_dir):
         """
         Test that build() correctly removes 'Unnamed:' columns from CSV
@@ -108,7 +108,7 @@ class TestBuildEmbeddings:
         # Verify it still created the record
         mock_embeddings_instance.index.assert_called_once()
 
-    @patch('src.build_embeddings.Embeddings')
+    @patch('backend.src.build_embeddings.Embeddings')
     def test_build_drops_rows_with_missing_values(self, mock_embeddings_class, temp_dir):
         """
         Test that build() drops rows with missing required fields
@@ -136,7 +136,7 @@ class TestBuildEmbeddings:
         records = mock_embeddings_instance.index.call_args[0][0]
         assert len(records) == 1
 
-    @patch('src.build_embeddings.Embeddings')
+    @patch('backend.src.build_embeddings.Embeddings')
     def test_build_normalizes_domain_field(self, mock_embeddings_class, temp_csv, temp_dir):
         """
         Test that build() normalizes domain field (strip + lowercase)
@@ -157,7 +157,7 @@ class TestBuildEmbeddings:
 
     # IMPORTANT TESTS - Edge cases and error handling
 
-    @patch('src.build_embeddings.Embeddings')
+    @patch('backend.src.build_embeddings.Embeddings')
     def test_build_enables_graph_when_dependencies_available(
         self, mock_embeddings_class, temp_csv, temp_dir
     ):
@@ -190,7 +190,7 @@ class TestBuildEmbeddings:
             if 'grandcypher' in sys.modules:
                 del sys.modules['grandcypher']
 
-    @patch('src.build_embeddings.Embeddings')
+    @patch('backend.src.build_embeddings.Embeddings')
     def test_build_works_without_graph_dependencies(self, mock_embeddings_class, temp_csv, temp_dir):
         """
         Test that build() still works when graph dependencies are not available
@@ -220,7 +220,7 @@ class TestBuildEmbeddings:
             if grandcypher_backup is not None:
                 sys.modules['grandcypher'] = grandcypher_backup
 
-    @patch('src.build_embeddings.Embeddings')
+    @patch('backend.src.build_embeddings.Embeddings')
     def test_build_creates_correct_record_structure(self, mock_embeddings_class, temp_csv, temp_dir):
         """
         Test that build() creates records with correct structure and fields
@@ -250,7 +250,7 @@ class TestBuildEmbeddings:
 
     # NICE-TO-HAVE TESTS - Additional coverage
 
-    @patch('src.build_embeddings.Embeddings')
+    @patch('backend.src.build_embeddings.Embeddings')
     def test_build_handles_different_encodings(self, mock_embeddings_class, temp_dir):
         """
         Test that build() respects the encoding parameter
@@ -276,7 +276,7 @@ class TestBuildEmbeddings:
         
         mock_embeddings_instance.index.assert_called_once()
 
-    @patch('src.build_embeddings.Embeddings')
+    @patch('backend.src.build_embeddings.Embeddings')
     def test_build_with_empty_csv(self, mock_embeddings_class, temp_dir):
         """
         Test that build() handles empty CSV gracefully

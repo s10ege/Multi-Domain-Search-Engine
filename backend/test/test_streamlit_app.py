@@ -15,7 +15,7 @@ import pytest
 # ── Path setup ────────────────────────────────────────────────────────────────
 TEST_DIR = Path(__file__).parent
 BACKEND_DIR = TEST_DIR.parent
-STREAMLIT_APP_DIR = BACKEND_DIR / "src" / "streamlit_app"
+STREAMLIT_APP_DIR = BACKEND_DIR / "streamlit_app"
 
 sys.path.insert(0, str(STREAMLIT_APP_DIR))
 sys.path.insert(0, str(BACKEND_DIR / "src"))

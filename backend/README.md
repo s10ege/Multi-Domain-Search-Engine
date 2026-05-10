@@ -6,39 +6,36 @@ Python backend for the semantic search application using txtai.
 
 ```
 backend/
-├── src/                  - Application code
+├── src/                  - Shared backend code
 │   ├── build_embeddings.py
 │   ├── client.py
 │   └── search_engine.py
-├── test/                 - Test suite (71 tests, 89% coverage)
-├── embeddings/           - Pre-built txtai index
+├── streamlit_app/        - Streamlit application
+├── test/                 - Test suite (293 tests)
 ├── final_data.csv        - Source dataset
 └── requirements.txt      - Python dependencies
 ```
 
-## Installation
+## Setup
+
+### 1. Install dependencies
 
 ```bash
 cd backend
-
-# Create virtual environment (from project root)
-cd ..
-python -m venv .venv
-.venv\Scripts\activate  # Windows
-# source .venv/bin/activate  # Linux/Mac
-
-# Install dependencies
-pip install -r backend/requirements.txt
+pip install -r requirements.txt
 ```
+
+### 2. Build the embeddings index (required before first run)
+
+The embeddings index is not included. Generate it from the source dataset:
+
+```bash
+python src/build_embeddings.py
+```
+
+This creates the `embeddings/` folder required by the search engine. Only needs to be run once.
 
 ## Usage
-
-### Run the API server (FastAPI)
-
-```bash
-cd backend
-python -m uvicorn src.api:app --reload --port 8000
-```
 
 ### Run the CLI Client
 
@@ -47,12 +44,12 @@ cd backend
 python src/client.py
 ```
 
-### Build Embeddings (if needed)
+### Run the Streamlit App
 
 ```bash
-cd backend
-python src/build_embeddings.py
+python -m streamlit run backend/streamlit_app/main.py
 ```
+
 
 ## Testing
 

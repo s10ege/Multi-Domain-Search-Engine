@@ -16,6 +16,10 @@ All commands assume you're in the project root directory.
 # Run the CLI client
 cd backend
 .venv/Scripts/python.exe -m src.client
+
+# Run the Streamlit app
+cd ..
+.venv/Scripts/python.exe -m streamlit run backend/streamlit_app/main.py
 ```
 
 ## Building Embeddings
@@ -50,6 +54,7 @@ start htmlcov/index.html  # Windows
 .venv\Scripts\activate
 
 # 2. Make code changes in backend/src/
+#    Streamlit UI changes live in backend/streamlit_app/
 
 # 3. Run tests
 pytest backend/test/ -v
@@ -73,7 +78,9 @@ project/
 │   │   ├── __init__.py
 │   │   ├── build_embeddings.py
 │   │   ├── client.py
-│   │   └── search_engine.py
+│   │   ├── search_engine.py
+│   │   └── api.py
+│   ├── streamlit_app/          # Streamlit application
 │   ├── test/                   # Test suite
 │   │   ├── test_build_embeddings.py
 │   │   ├── test_client.py
@@ -109,6 +116,7 @@ project/
 ## File Locations
 
 - **Application code**: `backend/src/`
+- **Streamlit app**: `backend/streamlit_app/`
 - **Tests**: `backend/test/`
 - **Data**: `backend/final_data.csv`
 - **Index**: `backend/embeddings/`

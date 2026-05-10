@@ -52,13 +52,15 @@ def load_resources(
     domains = df["domain"].astype(str).str.strip().str.lower().tolist()
     sources = df["source"].tolist()
 
-    # Load embeddings
+    # Load embeddings — config must match build_embeddings.py
     embeddings = Embeddings(
         {
-            "path": "sentence-transformers/all-MiniLM-L6-v2",
+            "path": "BAAI/bge-small-en-v1.5",
             "content": True,
             "scoring": {"method": "bm25", "terms": True},
-            "function": "sentence",
+            "instructions": {
+                "query": "Represent this sentence for searching relevant passages: ",
+            },
         }
     )
     path = Path(embeddings_path)
@@ -74,12 +76,14 @@ def load_resources(
     template = (
         "You are a helpful assistant. Answer the question below using only the information provided in the context.\n\n"
         "Instructions:\n"
-        "- Write in third-person perspective (avoid using 'I', 'we', 'you')\n"
+        "- Write in a clear, professional tone\n"
         "- Provide a clear, informative explanation\n"
         "- Write at least 3-4 complete sentences ending with proper punctuation\n"
         "- Always finish your sentences completely - never cut off mid-sentence\n"
         "- Do not include reasoning steps or thought process\n"
-        "- Stay factual and based on the context\n\n"
+        "- Stay factual and based on the context\n"
+        "- If the context does not contain enough information to answer the question, state that clearly\n"
+        "- When making specific claims, reference the title of the source in parentheses\n\n"
         "Question: {question}\n\n"
         "Context: {context}\n\n"
         "Answer:"
@@ -183,18 +187,31 @@ def _search_candidates(
     return results
 
 # 1. Standard Semantic Search
-# Retrieves the top-k most similar documents using vector + keyword scores.
+# Retrieves candidates via bi-encoder, then re-ranks with cross-encoder for
+# better top-k precision (typically +5–15% MRR@10).
 def search(
     resources: SearchResources,
     query: str,
     top_k: int = 5,
     domain: Optional[Union[str, list[str]]] = None,
 ):
-    # Pull more candidates than needed
-    candidate_k = max(top_k * 30, 50)
+    # Retrieve a modest candidate pool, then let the cross-encoder sort them.
+    RERANK_BUDGET = max(top_k * 4, 20)
+    candidates = _search_candidates(resources, query, RERANK_BUDGET, domain=domain)
+    if not candidates:
+        return []
 
-    results = _search_candidates(resources, query, candidate_k, domain=domain)
-    return results[:top_k]
+    similarity = _get_similarity_pipeline(SIMILARITY_MODEL_PATH)
+    MAX_LEN = 500  # stay within the cross-encoder's 512-token limit
+    truncated = [r["text"][:MAX_LEN] for r in candidates]
+    scores = similarity(query[:MAX_LEN], truncated)
+
+    reranked = []
+    for candidate_idx, score in scores:
+        item = candidates[int(candidate_idx)]
+        reranked.append({**item, "score": float(score)})
+
+    return reranked[:top_k]
 
 # Normalizes the diverse output formats of RAG pipelines into a single string.
 def _normalize_rag_answer(output: Any) -> str:
@@ -228,23 +245,27 @@ def rag_answer(
     domain: Optional[Union[str, list[str]]] = None,
     model_path: str = "Qwen/Qwen3-0.6B",
     template: Optional[str] = None,
-    max_context_chars: int = 1500,
+    max_context_chars: int = 3000,
     max_new_tokens: int = 512,
 ):
     results = search(resources, question, top_k=top_k, domain=domain)
     if not results:
         return {"answer": "", "results": []}
 
-    context_texts = [r["text"][:max_context_chars] for r in results]
+    context_texts = [
+        f"Title: {r['title']}\n{r['text'][:max_context_chars]}"
+        for r in results
+    ]
 
-    # Use pre-initialized RAG instance
-    # Note: do_sample=False ensures deterministic greedy decoding
-    # Don't pass temperature/top_p/top_k when do_sample=False as they're ignored
+    # Use pre-initialized RAG instance with sampling for more natural outputs.
+    # Qwen3 model card recommends temperature=0.7, top_p=0.8 for non-thinking mode.
     answer = resources.rag(
         question,
         texts=context_texts,
         max_new_tokens=max_new_tokens,
-        do_sample=False,  # Greedy decoding for consistent outputs
+        do_sample=True,
+        temperature=0.7,
+        top_p=0.8,
     )
 
     return {"answer": _normalize_rag_answer(answer), "results": results}

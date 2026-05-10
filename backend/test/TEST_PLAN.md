@@ -170,7 +170,7 @@ A complete test suite has been generated for all three Python modules in the sem
 - pytest >= 7.4.0
 - pytest-cov >= 4.1.0 (coverage reporting)
 - pytest-mock >= 3.11.1 (mocking)
-- flake8, black, mypy (code quality)
+- ruff, pyright (code quality)
 - pytest-sugar, pytest-xdist (enhanced output & parallel execution)
 
 ### TESTING.md

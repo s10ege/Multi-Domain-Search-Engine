@@ -111,14 +111,15 @@ class TestLoadResources:
         
         # Verify embeddings configuration
         embeddings_config = mock_embeddings_class.call_args[0][0]
-        assert embeddings_config['path'] == 'sentence-transformers/all-MiniLM-L6-v2'
+        assert embeddings_config['path'] == 'BAAI/bge-small-en-v1.5'
         assert embeddings_config['content'] is True
         assert embeddings_config['scoring']['method'] == 'bm25'
+        assert embeddings_config['instructions']['query'].startswith('Represent this sentence')
         
         # Verify RAG initialization
         mock_rag_class.assert_called_once()
         rag_args = mock_rag_class.call_args
-        assert rag_args[0][1] == 'Qwen/Qwen3-0.6B'  # Model path
+        assert rag_args[0][1] == 'Qwen/Qwen3-1.7B'  # Model path
 
     @patch('src.search_engine.Embeddings')
     @patch('src.search_engine.RAG')
@@ -368,15 +369,21 @@ class TestSearchCandidates:
 class TestSearch:
     """Test suite for search function"""
 
+    @patch('src.search_engine._get_similarity_pipeline')
     @patch('src.search_engine._search_candidates')
-    def test_search_returns_top_k_results(self, mock_search_candidates):
+    def test_search_returns_top_k_results(self, mock_search_candidates, mock_get_similarity):
         """
         Test search returns exactly top_k results
         Priority: CRITICAL
         """
         # Mock returns 10 results
-        mock_results = [{'title': f'Title {i}', 'score': 1.0 - i*0.1} for i in range(10)]
+        mock_results = [
+            {'title': f'Title {i}', 'text': f'Text {i}', 'score': 1.0 - i*0.1}
+            for i in range(10)
+        ]
         mock_search_candidates.return_value = mock_results
+        mock_similarity = Mock(return_value=[(i, 1.0 - i * 0.1) for i in range(10)])
+        mock_get_similarity.return_value = mock_similarity
         
         resources = Mock()
         
@@ -385,8 +392,9 @@ class TestSearch:
         # Should return only top 5
         assert len(results) == 5
 
+    @patch('src.search_engine._get_similarity_pipeline')
     @patch('src.search_engine._search_candidates')
-    def test_search_requests_more_candidates(self, mock_search_candidates):
+    def test_search_requests_more_candidates(self, mock_search_candidates, mock_get_similarity):
         """
         Test search requests more candidates than top_k for better results
         Priority: IMPORTANT
@@ -396,10 +404,10 @@ class TestSearch:
         
         search(resources, 'test query', top_k=5)
         
-        # Should request top_k * 30 candidates (or min 50)
+        # Should request top_k * 4 candidates (or min 20)
         call_args = mock_search_candidates.call_args
         candidate_k = call_args[0][2]
-        assert candidate_k >= 50
+        assert candidate_k >= 20
 
     @patch('src.search_engine._search_candidates')
     def test_search_passes_domain_filter(self, mock_search_candidates):
@@ -542,7 +550,7 @@ class TestRagAnswer:
         Priority: IMPORTANT
         """
         long_text = 'A' * 2000
-        mock_search.return_value = [{'text': long_text}]
+        mock_search.return_value = [{'title': 'Long Doc', 'text': long_text}]
         
         mock_rag = MagicMock()
         mock_rag.return_value = 'answer'
@@ -556,7 +564,8 @@ class TestRagAnswer:
         
         call_args = mock_rag.call_args
         context_text = call_args[1]['texts'][0]
-        assert len(context_text) <= 1500
+        assert context_text.startswith('Title: Long Doc\n')
+        assert context_text.endswith('A' * 1500)
 
     @patch('src.search_engine.search')
     def test_rag_answer_passes_domain_filter(self, mock_search):

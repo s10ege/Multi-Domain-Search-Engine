@@ -1,0 +1,182 @@
+{
+  "aggregate": {
+    "n_queries": 10,
+    "mean_faithfulness": 1.7,
+    "mean_relevance": 2.0,
+    "mean_latency_s": 336.087,
+    "scale": "0 = poor, 1 = partial, 2 = good"
+  },
+  "by_domain": {
+    "research": {
+      "mean_faithfulness": 2.0,
+      "mean_relevance": 2.0
+    },
+    "blog": {
+      "mean_faithfulness": 1.0,
+      "mean_relevance": 2.0
+    },
+    "documentation": {
+      "mean_faithfulness": 2.0,
+      "mean_relevance": 2.0
+    }
+  },
+  "per_query": [
+    {
+      "id": "rag_r01",
+      "query": "transformer attention mechanism self-attention",
+      "domain": "research",
+      "answer": "The transformer attention mechanism is a key component in transformer-based models, enabling the model to capture dependencies between different parts of the input. In the context of the first title, \"Learning to Explain: Supervised Token Attribution from Transformer Attention Patterns,\" the self-attention mechanism is used to identify important tokens in a model's decision-making process. The attention weights provide insight into which parts of the input the model focuses on, which is crucial for interpretability in high-stakes applications. The second title, \"Two-Stream temporal transformer for video action classification,\" further highlights the importance of the self-attention mechanism in capturing spatio-temporal information, which is essential for video understanding and action recognition. The third title, \"Power-based Partial Attention: Bridging Linear-Complexity and Full Attention,\" explores the efficiency of the self-attention mechanism by introducing a power-based approach that balances computational complexity with performance.",
+      "answer_length": 1057,
+      "context_titles": [
+        "Learning to Explain: Supervised Token Attribution from Transformer Attention Patterns",
+        "Two-Stream temporal transformer for video action classification",
+        "Power-based Partial Attention: Bridging Linear-Complexity and Full Attention"
+      ],
+      "faithfulness": 2,
+      "relevance": 2,
+      "scoring_reasoning": "Relevance: 4/4 query terms in answer (ratio=1.00). Faithfulness: 26.14% answer words overlap with context.",
+      "latency_s": 522.127
+    },
+    {
+      "id": "rag_r02",
+      "query": "reinforcement learning policy gradient reward",
+      "domain": "research",
+      "answer": "The context discusses a paper titled \"Rank-1 Approximation of Inverse Fisher for Natural Policy Gradients in Deep Reinforcement Learning\" that introduces an efficient method for natural policy gradients in deep reinforcement learning. The paper addresses the computational challenge of computing natural gradients, which requires inverting the Fisher Information Matrix (FIM) at each iteration. By using a rank-1 approximation of the inverse-FIM, the method achieves faster convergence and comparable sample complexity to stochastic policy gradient methods under certain conditions. The paper demonstrates that this approach outperforms standard actor-critic and trust-region baselines on a diverse set of environments.",
+      "answer_length": 719,
+      "context_titles": [
+        "Rank-1 Approximation of Inverse Fisher for Natural Policy Gradients in Deep Reinforcement Learning",
+        "Rank-1 Approximation of Inverse Fisher for Natural Policy Gradients in Deep Reinforcement Learning",
+        "Rank-1 Approximation of Inverse Fisher for Natural Policy Gradients in Deep Reinforcement Learning"
+      ],
+      "faithfulness": 2,
+      "relevance": 2,
+      "scoring_reasoning": "Relevance: 4/5 query terms in answer (ratio=0.80). Faithfulness: 27.54% answer words overlap with context.",
+      "latency_s": 367.636
+    },
+    {
+      "id": "rag_r03",
+      "query": "graph neural network node classification",
+      "domain": "research",
+      "answer": "The graph neural network node classification task involves encoding complex relationships within a graph structure into continuous representations, which are then used to predict node labels. The context discusses how graph structure influences membership-inference risk, emphasizing the importance of analyzing both training graph construction and inference-time edge access. Empirically, snowball's coverage bias can hinder generalization, but access to inter-train-test edges at inference improves test accuracy and reduces the train-test gap. The study also highlights that the generalization gap, while a proxy for membership inference risk, is not sufficient as it does not account for the impact of edge access during inference.",
+      "answer_length": 735,
+      "context_titles": [
+        "How does Graph Structure Modulate Membership-Inference Risk for Graph Neural Networks?",
+        "Understanding When Graph Convolutional Networks Help: A Diagnostic Study on Label Scarcity and Structural Properties",
+        "Multi-Targeted Graph Backdoor Attack"
+      ],
+      "faithfulness": 2,
+      "relevance": 2,
+      "scoring_reasoning": "Relevance: 5/5 query terms in answer (ratio=1.00). Faithfulness: 23.75% answer words overlap with context.",
+      "latency_s": 523.887
+    },
+    {
+      "id": "rag_r04",
+      "query": "federated learning privacy distributed training",
+      "domain": "research",
+      "answer": "FedCCA is a client-centric adaptation approach for federated learning on IoT devices, designed to address the challenges posed by data heterogeneity. It leverages dynamic client selection and adaptive aggregation based on a client-specific encoder to optimize model training. The algorithm employs an attention-based global aggregation strategy to enhance multi-source knowledge transfer, enabling each client to learn a unique model tailored to its data characteristics. Experimental results demonstrate that FedCCA outperforms existing methods in terms of performance and fairness, particularly under non-IID data conditions.",
+      "answer_length": 627,
+      "context_titles": [
+        "FedCCA: Client-Centric Adaptation against Data Heterogeneity in Federated Learning on IoT Devices",
+        "FedCCA: Client-Centric Adaptation against Data Heterogeneity in Federated Learning on IoT Devices",
+        "Clust-PSI-PFL: A Population Stability Index Approach for Clustered Non-IID Personalized Federated Learning"
+      ],
+      "faithfulness": 2,
+      "relevance": 2,
+      "scoring_reasoning": "Relevance: 3/5 query terms in answer (ratio=0.60). Faithfulness: 22.06% answer words overlap with context.",
+      "latency_s": 460.875
+    },
+    {
+      "id": "rag_r05",
+      "query": "diffusion model score matching denoising",
+      "domain": "research",
+      "answer": "The term \"diffusion model score matching denoising\" refers to a technique used in generative modeling to estimate the score function of a diffusion model. This method involves using denoising score matching to estimate the score function, which is essential for tasks like density estimation and model training. The approach leverages the gradient of the log-density, which is estimated from data via denoising score matching, allowing for efficient computation of the score function. This technique is particularly useful for models with high-dimensional data, as it avoids the curse of dimensionality and enables the estimation of log-density Hessians.",
+      "answer_length": 654,
+      "context_titles": [
+        "Implicit score matching meets denoising score matching: improved rates of convergence and log-density Hessian estimation",
+        "When Are Two Scores Better Than One? Investigating Ensembles of Diffusion Models",
+        "Physics-informed machine learning for reconstruction of dynamical systems with invariant measure score matching"
+      ],
+      "faithfulness": 2,
+      "relevance": 2,
+      "scoring_reasoning": "Relevance: 5/5 query terms in answer (ratio=1.00). Faithfulness: 31.75% answer words overlap with context.",
+      "latency_s": 417.16
+    },
+    {
+      "id": "rag_b01",
+      "query": "how to build a neural network from scratch Python",
+      "domain": "blog",
+      "answer": "To build a neural network from scratch in Python, you can follow these steps: first, define the structure of the network, including the input layer, hidden layers, and output layer. Next, initialize the weights and biases for each layer using random values or specific initialization methods. Then, implement the forward pass to compute the output of the network based on the input data. After that, use backpropagation to calculate the gradients of the loss function with respect to the weights and biases. Finally, update the weights using an optimizer like Adam to minimize the loss function. This process is typically implemented using libraries such as TensorFlow or PyTorch, but for a basic implementation, you can use NumPy to handle the computations manually.",
+      "answer_length": 767,
+      "context_titles": [
+        "Understanding Neural Networks: A Complete Guide to Deep Learning"
+      ],
+      "faithfulness": 1,
+      "relevance": 2,
+      "scoring_reasoning": "Relevance: 5/5 query terms in answer (ratio=1.00). Faithfulness: 12.79% answer words overlap with context.",
+      "latency_s": 191.916
+    },
+    {
+      "id": "rag_b02",
+      "query": "gradient descent explained step by step beginner",
+      "domain": "blog",
+      "answer": "Gradient descent is a mathematical optimization algorithm used to find the minimum of a function. It works by iteratively adjusting the parameters of a model to minimize a loss function. The process starts with an initial guess for the parameters, and then calculates the gradient of the loss function with respect to these parameters. The gradient indicates the direction in which the function increases, and gradient descent adjusts the parameters in the opposite direction to reduce the loss. This iterative process continues until the parameters reach a point where the loss is minimized, known as the minimum value.",
+      "answer_length": 620,
+      "context_titles": [
+        "Gradient Descent Optimization Explained",
+        "Gradient Descent Optimization Explained",
+        "Gradient Descent Optimization Explained"
+      ],
+      "faithfulness": 0,
+      "relevance": 2,
+      "scoring_reasoning": "Relevance: 2/3 query terms in answer (ratio=0.67). Faithfulness: 6.90% answer words overlap with context.",
+      "latency_s": 321.713
+    },
+    {
+      "id": "rag_b03",
+      "query": "overfitting regularisation dropout tutorial",
+      "domain": "blog",
+      "answer": "Regularization techniques such as L1, L2, and Elastic Net are used to prevent overfitting in machine learning models. L2 regularization adds a penalty term to the loss function, which shrinks the weights toward zero, reducing model complexity. L1 regularization, on the other hand, adds a penalty that sets some weights to exactly zero, effectively performing feature selection. Dropout is another regularization technique that randomly zeros out neurons during training, mimicking ensemble averaging and reducing overfitting. These methods are often used in conjunction with other techniques like batch normalization and data augmentation to improve model generalization.",
+      "answer_length": 672,
+      "context_titles": [
+        "Regularization Techniques: L1, L2, and Elastic Net",
+        "Understanding Neural Networks: A Complete Guide to Deep Learning"
+      ],
+      "faithfulness": 2,
+      "relevance": 2,
+      "scoring_reasoning": "Relevance: 2/3 query terms in answer (ratio=0.67). Faithfulness: 24.66% answer words overlap with context.",
+      "latency_s": 247.194
+    },
+    {
+      "id": "rag_d01",
+      "query": "scikit-learn Pipeline fit transform parameters",
+      "domain": "documentation",
+      "answer": "sklearn.metrics.score is a standard scikit-learn component that follows the fit-transform API pattern, allowing it to integrate seamlessly with pipelines and cross-validation. It enables reproducible machine learning development by providing a consistent interface for evaluating model performance. The component's fit method prepares the model, while the transform method applies the model's predictions. The parameters of the fit and transform methods are managed through the component's internal state, ensuring consistency in machine learning workflows.",
+      "answer_length": 557,
+      "context_titles": [
+        "sklearn.metrics.score",
+        "sklearn.ensemble.Classifier",
+        "sklearn.ensemble.Classifier"
+      ],
+      "faithfulness": 2,
+      "relevance": 2,
+      "scoring_reasoning": "Relevance: 4/4 query terms in answer (ratio=1.00). Faithfulness: 41.07% answer words overlap with context.",
+      "latency_s": 149.271
+    },
+    {
+      "id": "rag_d02",
+      "query": "PyTorch nn.Module forward method layer definition",
+      "domain": "documentation",
+      "answer": "torch.nn.Module is a fundamental class in PyTorch that provides a framework for building neural networks. The forward method in torch.nn.Module defines how the network processes input data. For example, the torch.nn.Linear layer, which is a crucial component in deep learning, defines a linear transformation through its forward method. The forward method of torch.nn.Linear includes the mathematical operations required for linear regression and classification tasks. When a model is initialized, the forward method is called to compute the output based on the input tensor and the layer's parameters.",
+      "answer_length": 602,
+      "context_titles": [
+        "torch.nn.Module",
+        "torch.nn.Linear",
+        "torch.nn.Linear"
+      ],
+      "faithfulness": 2,
+      "relevance": 2,
+      "scoring_reasoning": "Relevance: 5/6 query terms in answer (ratio=0.83). Faithfulness: 33.33% answer words overlap with context.",
+      "latency_s": 159.093
+    }
+  ]
+}

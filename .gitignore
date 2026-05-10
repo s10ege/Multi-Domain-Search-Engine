@@ -46,3 +46,11 @@ backend/embeddings/
 build/
 dist/
 *.egg-info/
+
+# Claude Code local config
+.claude/settings.local.json
+.mcp.json
+
+# Pytest reports (regenerate locally)
+backend/test/report.html
+backend/test/report.json

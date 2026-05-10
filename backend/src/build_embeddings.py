@@ -21,15 +21,19 @@ def build(
     # Drop rows with missing values in the specified columns and reset the index
     df = df.dropna(subset=["title", "text", "domain", "source"]).reset_index(drop=True)
 
-    # Prepare records for indexing
+    # Prepare records for indexing.
+    # The indexed "text" field is title + body so that title keywords contribute
+    # to the semantic vector. Display text is read from the CSV at load time,
+    # so the content store value doesn't affect what users see.
     records = []
     for i, row in df.iterrows():
-        text = str(row["text"])
+        title = str(row["title"])
+        body  = str(row["text"])
         record = {
-            "text": text,
-            "title": str(row["title"]),
+            "text": f"{title} [SEP] {body}",
+            "title": title,
             # Domain is treated different because, each domain will be searched individually.
-            "domain": str(row["domain"]).strip().lower(),   
+            "domain": str(row["domain"]).strip().lower(),
             "source": str(row["source"]),
         }
         records.append((i, record))
@@ -51,11 +55,16 @@ def build(
         graph_config = None
 
     embeddings_config = {
-        # It maps sentences & paragraphs to a 384 dimensional dense vector space and can be used for tasks like clustering or semantic search.
-        "path": "sentence-transformers/all-MiniLM-L6-v2",
+        # bge-small-en-v1.5: retrieval-optimised, 384-dim, 512-token max.
+        # Same dimensions as the previous model — FAISS config needs no change.
+        "path": "BAAI/bge-small-en-v1.5",
         "content": True,
         "scoring": {"method": "bm25", "terms": True},
-        "function": "sentence",
+        "instructions": {
+            # BGE models are designed with asymmetric retrieval: queries get a
+            # task prefix, documents do not.
+            "query": "Represent this sentence for searching relevant passages: ",
+        },
     }
     if graph_config:
         embeddings_config["graph"] = graph_config

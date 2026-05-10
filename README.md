@@ -1,6 +1,6 @@
 # Semantic Search Engine (txtai)
 
-This project provides a Semantic Search Engine and RAG (Retrieval-Augmented Generation) system using [txtai](https://github.com/neuMl/txtai). It allows you to index a dataset, perform semantic queries, ask questions (QA), and summarize results through a command-line interface.
+This project provides a Semantic Search Engine and RAG (Retrieval-Augmented Generation) system using [txtai](https://github.com/neuMl/txtai). It supports a command-line client and a Streamlit application on top of the same backend search resources.
 
 ## Project Structure
 
@@ -8,6 +8,7 @@ This project provides a Semantic Search Engine and RAG (Retrieval-Augmented Gene
 project/
 ├── backend/              - Python backend application
 │   ├── src/              - Application code
+│   ├── streamlit_app/    - Streamlit application
 │   ├── test/             - Test suite (71 tests, 89% coverage)
 │   ├── embeddings/       - Pre-built txtai index
 │   ├── final_data.csv    - Source dataset
@@ -38,10 +39,14 @@ pip install -r backend/requirements.txt
 ### 3. Run the Application
 
 ```bash
+# CLI client
 cd backend
 python src/client.py
+
+# Streamlit app
+cd ..
+python -m streamlit run backend/streamlit_app/main.py
 ```
-C:/Users/soner/.vscode/projects/123/.venv/Scripts/python.exe -m src.client
 
 ## Features
 
@@ -50,6 +55,7 @@ C:/Users/soner/.vscode/projects/123/.venv/Scripts/python.exe -m src.client
 - **Domain Filtering** - Search within specific domains
 - **More Like This** - Find similar documents
 - **Hybrid Search** - Combines vector similarity with BM25 keyword scoring
+- **Streamlit UI** - Authenticated search experience with saved history
 
 ## Documentation
 

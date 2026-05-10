@@ -1,0 +1,1759 @@
+[
+  {
+    "id": "r01",
+    "query": "transformer attention mechanism self-attention",
+    "domain": "research",
+    "hits": [
+      {
+        "rank": 1,
+        "index": 1866,
+        "title": "Learning to Explain: Supervised Token Attribution from Transformer Attention Patterns",
+        "domain": "research",
+        "score": 0.999371,
+        "snippet": "Explainable AI (XAI) has become critical as transformer-based models are deployed in high-stakes applications including healthcare, legal systems, and"
+      },
+      {
+        "rank": 2,
+        "index": 1444,
+        "title": "Two-Stream temporal transformer for video action classification",
+        "domain": "research",
+        "score": 0.998637,
+        "snippet": "Motion representation plays an important role in video understanding and has many applications including action recognition, robot and autonomous guid"
+      },
+      {
+        "rank": 3,
+        "index": 1497,
+        "title": "Dynamic Differential Linear Attention: Enhancing Linear Diffusion Transformer for High-Quality Image Generation",
+        "domain": "research",
+        "score": 0.996755,
+        "snippet": "Diffusion transformers (DiTs) have emerged as a powerful architecture for high-fidelity image generation, yet the quadratic cost of self-attention pos"
+      },
+      {
+        "rank": 4,
+        "index": 717,
+        "title": "Power-based Partial Attention: Bridging Linear-Complexity and Full Attention",
+        "domain": "research",
+        "score": 0.981915,
+        "snippet": "It is widely accepted from transformer research that \"attention is all we need\", but the amount of attention required has never been systematically qu"
+      },
+      {
+        "rank": 5,
+        "index": 255,
+        "title": "MambaNet: Mamba-assisted Channel Estimation Neural Network With Attention Mechanism",
+        "domain": "research",
+        "score": 0.954953,
+        "snippet": "This paper proposes a Mamba-assisted neural network framework incorporating self-attention mechanism to achieve improved channel estimation with low c"
+      },
+      {
+        "rank": 6,
+        "index": 768,
+        "title": "MambaNet: Mamba-assisted Channel Estimation Neural Network With Attention Mechanism",
+        "domain": "research",
+        "score": 0.954953,
+        "snippet": "This paper proposes a Mamba-assisted neural network framework incorporating self-attention mechanism to achieve improved channel estimation with low c"
+      },
+      {
+        "rank": 7,
+        "index": 633,
+        "title": "TensorLens: End-to-End Transformer Analysis via High-Order Attention Tensors",
+        "domain": "research",
+        "score": 0.914334,
+        "snippet": "Attention matrices are fundamental to transformer research, supporting a broad range of applications including interpretability, visualization, manipu"
+      },
+      {
+        "rank": 8,
+        "index": 1762,
+        "title": "PRISM: Deriving the Transformer as a Signal-Denoising Operator via Maximum Coding Rate Reduction",
+        "domain": "research",
+        "score": 0.853958,
+        "snippet": "Deep learning models, particularly Transformers, are often criticized as \"black boxes\" and lack interpretability. We propose Prism, a white-box attent"
+      },
+      {
+        "rank": 9,
+        "index": 926,
+        "title": "PRISM: Deriving the Transformer as a Signal-Denoising Operator via Maximum Coding Rate Reduction",
+        "domain": "research",
+        "score": 0.853958,
+        "snippet": "Deep learning models, particularly Transformers, are often criticized as \"black boxes\" and lack interpretability. We propose Prism, a white-box attent"
+      },
+      {
+        "rank": 10,
+        "index": 458,
+        "title": "PRISM: Deriving the Transformer as a Signal-Denoising Operator via Maximum Coding Rate Reduction",
+        "domain": "research",
+        "score": 0.853958,
+        "snippet": "Deep learning models, particularly Transformers, are often criticized as \"black boxes\" and lack interpretability. We propose Prism, a white-box attent"
+      }
+    ]
+  },
+  {
+    "id": "r02",
+    "query": "convolutional neural network image classification",
+    "domain": "research",
+    "hits": [
+      {
+        "rank": 1,
+        "index": 1228,
+        "title": "A Cosine Network for Image Super-Resolution",
+        "domain": "research",
+        "score": 0.995872,
+        "snippet": "Deep convolutional neural networks can use hierarchical information to progressively extract structural information to recover high-quality images. Ho"
+      },
+      {
+        "rank": 2,
+        "index": 1287,
+        "title": "A Mobile Application for Flower Recognition System Based on Convolutional Neural Networks",
+        "domain": "research",
+        "score": 0.993294,
+        "snippet": "A convolutional neural network (CNN) is a deep learning algorithm that has been specifically designed for computer vision applications. The CNNs prove"
+      },
+      {
+        "rank": 3,
+        "index": 408,
+        "title": "A Mobile Application for Flower Recognition System Based on Convolutional Neural Networks",
+        "domain": "research",
+        "score": 0.993294,
+        "snippet": "A convolutional neural network (CNN) is a deep learning algorithm that has been specifically designed for computer vision applications. The CNNs prove"
+      },
+      {
+        "rank": 4,
+        "index": 2486,
+        "title": "Understanding When Graph Convolutional Networks Help: A Diagnostic Study on Label Scarcity and Structural Properties",
+        "domain": "research",
+        "score": 0.989838,
+        "snippet": "Graph Convolutional Networks (GCNs) have become a standard approach for semi-supervised node classification, yet practitioners lack clear guidance on "
+      },
+      {
+        "rank": 5,
+        "index": 1397,
+        "title": "Transfer Learning from One Cancer to Another via Deep Learning Domain Adaptation",
+        "domain": "research",
+        "score": 0.934388,
+        "snippet": "Supervised deep learning models often achieve excellent performance within their training distribution but struggle to generalize beyond it. In cancer"
+      },
+      {
+        "rank": 6,
+        "index": 1034,
+        "title": "Efficient Complex-Valued Vision Transformers for MRI Classification Directly from k-Space",
+        "domain": "research",
+        "score": 0.884536,
+        "snippet": "Deep learning applications in Magnetic Resonance Imaging (MRI) predominantly operate on reconstructed magnitude images, a process that discards phase "
+      },
+      {
+        "rank": 7,
+        "index": 746,
+        "title": "Conservative & Aggressive NaNs Accelerate U-Nets for Neuroimaging",
+        "domain": "research",
+        "score": 0.625092,
+        "snippet": "Deep learning models for neuroimaging increasingly rely on large architectures, making efficiency a persistent concern despite advances in hardware. T"
+      },
+      {
+        "rank": 8,
+        "index": 235,
+        "title": "Conservative & Aggressive NaNs Accelerate U-Nets for Neuroimaging",
+        "domain": "research",
+        "score": 0.625092,
+        "snippet": "Deep learning models for neuroimaging increasingly rely on large architectures, making efficiency a persistent concern despite advances in hardware. T"
+      },
+      {
+        "rank": 9,
+        "index": 2188,
+        "title": "Poisson Hyperplane Processes with Rectified Linear Units",
+        "domain": "research",
+        "score": 0.351223,
+        "snippet": "Neural networks have shown state-of-the-art performances in various classification and regression tasks. Rectified linear units (ReLU) are often used "
+      },
+      {
+        "rank": 10,
+        "index": 1403,
+        "title": "SiMiC: Context-Aware Silicon Microstructure Characterization Using Attention-Based Convolutional Neural Networks for Field-Emission Tip Analysis",
+        "domain": "research",
+        "score": 0.151003,
+        "snippet": "Accurate characterization of silicon microstructures is essential for advancing microscale fabrication, quality control, and device performance. Tradi"
+      }
+    ]
+  },
+  {
+    "id": "r03",
+    "query": "reinforcement learning policy gradient reward",
+    "domain": "research",
+    "hits": [
+      {
+        "rank": 1,
+        "index": 506,
+        "title": "POPE: Learning to Reason on Hard Problems via Privileged On-Policy Exploration",
+        "domain": "research",
+        "score": 0.987267,
+        "snippet": "Reinforcement learning (RL) has improved the reasoning abilities of large language models (LLMs), yet state-of-the-art methods still fail to learn on "
+      },
+      {
+        "rank": 2,
+        "index": 5,
+        "title": "POPE: Learning to Reason on Hard Problems via Privileged On-Policy Exploration",
+        "domain": "research",
+        "score": 0.987267,
+        "snippet": "Reinforcement learning (RL) has improved the reasoning abilities of large language models (LLMs), yet state-of-the-art methods still fail to learn on "
+      },
+      {
+        "rank": 3,
+        "index": 1507,
+        "title": "POPE: Learning to Reason on Hard Problems via Privileged On-Policy Exploration",
+        "domain": "research",
+        "score": 0.987267,
+        "snippet": "Reinforcement learning (RL) has improved the reasoning abilities of large language models (LLMs), yet state-of-the-art methods still fail to learn on "
+      },
+      {
+        "rank": 4,
+        "index": 2004,
+        "title": "Rank-1 Approximation of Inverse Fisher for Natural Policy Gradients in Deep Reinforcement Learning",
+        "domain": "research",
+        "score": 0.981493,
+        "snippet": "Natural gradients have long been studied in deep reinforcement learning due to their fast convergence properties and covariant weight updates. However"
+      },
+      {
+        "rank": 5,
+        "index": 541,
+        "title": "Rank-1 Approximation of Inverse Fisher for Natural Policy Gradients in Deep Reinforcement Learning",
+        "domain": "research",
+        "score": 0.981493,
+        "snippet": "Natural gradients have long been studied in deep reinforcement learning due to their fast convergence properties and covariant weight updates. However"
+      },
+      {
+        "rank": 6,
+        "index": 34,
+        "title": "Rank-1 Approximation of Inverse Fisher for Natural Policy Gradients in Deep Reinforcement Learning",
+        "domain": "research",
+        "score": 0.981493,
+        "snippet": "Natural gradients have long been studied in deep reinforcement learning due to their fast convergence properties and covariant weight updates. However"
+      },
+      {
+        "rank": 7,
+        "index": 1501,
+        "title": "Reuse your FLOPs: Scaling RL on Hard Problems by Conditioning on Very Off-Policy Prefixes",
+        "domain": "research",
+        "score": 0.980269,
+        "snippet": "Typical reinforcement learning (RL) methods for LLM reasoning waste compute on hard problems, where correct on-policy traces are rare, policy gradient"
+      },
+      {
+        "rank": 8,
+        "index": 1,
+        "title": "Reuse your FLOPs: Scaling RL on Hard Problems by Conditioning on Very Off-Policy Prefixes",
+        "domain": "research",
+        "score": 0.980269,
+        "snippet": "Typical reinforcement learning (RL) methods for LLM reasoning waste compute on hard problems, where correct on-policy traces are rare, policy gradient"
+      },
+      {
+        "rank": 9,
+        "index": 501,
+        "title": "Reuse your FLOPs: Scaling RL on Hard Problems by Conditioning on Very Off-Policy Prefixes",
+        "domain": "research",
+        "score": 0.980269,
+        "snippet": "Typical reinforcement learning (RL) methods for LLM reasoning waste compute on hard problems, where correct on-policy traces are rare, policy gradient"
+      },
+      {
+        "rank": 10,
+        "index": 561,
+        "title": "Just-In-Time Reinforcement Learning: Continual Learning in LLM Agents Without Gradient Updates",
+        "domain": "research",
+        "score": 0.963051,
+        "snippet": "While Large Language Model (LLM) agents excel at general tasks, they inherently struggle with continual adaptation due to the frozen weights after dep"
+      }
+    ]
+  },
+  {
+    "id": "r04",
+    "query": "BERT language model pre-training fine-tuning NLP",
+    "domain": "research",
+    "hits": [
+      {
+        "rank": 1,
+        "index": 1563,
+        "title": "Fine-Grained Emotion Detection on GoEmotions: Experimental Comparison of Classical Machine Learning, BiLSTM, and Transformer Models",
+        "domain": "research",
+        "score": 0.984943,
+        "snippet": "Fine-grained emotion recognition is a challenging multi-label NLP task due to label overlap and class imbalance. In this work, we benchmark three mode"
+      },
+      {
+        "rank": 2,
+        "index": 3568,
+        "title": "CooperLLM: Cloud-Edge-End Cooperative Federated Fine-tuning for LLMs via ZOO-based Gradient Correction",
+        "domain": "research",
+        "score": 0.953672,
+        "snippet": "Large Language Models (LLMs) perform well on many NLP tasks, but fine-tuning them on resource-constrained mobile devices is challenging due to high me"
+      },
+      {
+        "rank": 3,
+        "index": 1058,
+        "title": "Multi-Perspective Subimage CLIP with Keyword Guidance for Remote Sensing Image-Text Retrieval",
+        "domain": "research",
+        "score": 0.94057,
+        "snippet": "Vision-Language Pre-training (VLP) models like CLIP have significantly advanced Remote Sensing Image-Text Retrieval (RSITR). However, existing methods"
+      },
+      {
+        "rank": 4,
+        "index": 3457,
+        "title": "Do LLMs Align with My Task? Evaluating Text-to-SQL via Dataset Alignment",
+        "domain": "research",
+        "score": 0.860195,
+        "snippet": "Supervised Fine-Tuning (SFT) is an effective method for adapting Large Language Models (LLMs) on downstream tasks. However, variability in training da"
+      },
+      {
+        "rank": 5,
+        "index": 1725,
+        "title": "Improving Training Efficiency and Reducing Maintenance Costs via Language Specific Model Merging",
+        "domain": "research",
+        "score": 0.838113,
+        "snippet": "Fine-tuning a task-specific multilingual large language model (LLM) involves training the model on a multilingual dataset with examples in all the req"
+      },
+      {
+        "rank": 6,
+        "index": 373,
+        "title": "Improving Training Efficiency and Reducing Maintenance Costs via Language Specific Model Merging",
+        "domain": "research",
+        "score": 0.838113,
+        "snippet": "Fine-tuning a task-specific multilingual large language model (LLM) involves training the model on a multilingual dataset with examples in all the req"
+      },
+      {
+        "rank": 7,
+        "index": 3671,
+        "title": "Chronicals: A High-Performance Framework for LLM Fine-Tuning with 3.51x Speedup over Unsloth",
+        "domain": "research",
+        "score": 0.823695,
+        "snippet": "Large language model fine-tuning is bottlenecked by memory: a 7B parameter model requires 84GB--14GB for weights, 14GB for gradients, and 56GB for FP3"
+      },
+      {
+        "rank": 8,
+        "index": 2232,
+        "title": "Chronicals: A High-Performance Framework for LLM Fine-Tuning with 3.51x Speedup over Unsloth",
+        "domain": "research",
+        "score": 0.823695,
+        "snippet": "Large language model fine-tuning is bottlenecked by memory: a 7B parameter model requires 84GB--14GB for weights, 14GB for gradients, and 56GB for FP3"
+      },
+      {
+        "rank": 9,
+        "index": 1363,
+        "title": "Unified Multi-Dataset Training for TBPS",
+        "domain": "research",
+        "score": 0.820578,
+        "snippet": "Text-Based Person Search (TBPS) has seen significant progress with vision-language models (VLMs), yet it remains constrained by limited training data "
+      },
+      {
+        "rank": 10,
+        "index": 526,
+        "title": "Mechanistic Analysis of Catastrophic Forgetting in Large Language Models During Continual Fine-tuning",
+        "domain": "research",
+        "score": 0.814848,
+        "snippet": "Large language models exhibit remarkable performance across diverse tasks through pre-training and fine-tuning paradigms. However, continual fine-tuni"
+      }
+    ]
+  },
+  {
+    "id": "r05",
+    "query": "generative adversarial network image synthesis",
+    "domain": "research",
+    "hits": [
+      {
+        "rank": 1,
+        "index": 1302,
+        "title": "Consistency-Regularized GAN for Few-Shot SAR Target Recognition",
+        "domain": "research",
+        "score": 0.995004,
+        "snippet": "Few-shot recognition in synthetic aperture radar (SAR) imagery remains a critical bottleneck for real-world applications due to extreme data scarcity."
+      },
+      {
+        "rank": 2,
+        "index": 979,
+        "title": "HyperNet-Adaptation for Diffusion-Based Test Case Generation",
+        "domain": "research",
+        "score": 0.972472,
+        "snippet": "The increasing deployment of deep learning systems requires systematic evaluation of their reliability in real-world scenarios. Traditional gradient-b"
+      },
+      {
+        "rank": 3,
+        "index": 951,
+        "title": "GeMM-GAN: A Multimodal Generative Model Conditioned on Histopathology Images and Clinical Descriptions for Gene Expression Profile Generation",
+        "domain": "research",
+        "score": 0.870541,
+        "snippet": "Biomedical research increasingly relies on integrating diverse data modalities, including gene expression profiles, medical images, and clinical metad"
+      },
+      {
+        "rank": 4,
+        "index": 1324,
+        "title": "GeMM-GAN: A Multimodal Generative Model Conditioned on Histopathology Images and Clinical Descriptions for Gene Expression Profile Generation",
+        "domain": "research",
+        "score": 0.870541,
+        "snippet": "Biomedical research increasingly relies on integrating diverse data modalities, including gene expression profiles, medical images, and clinical metad"
+      },
+      {
+        "rank": 5,
+        "index": 486,
+        "title": "GeMM-GAN: A Multimodal Generative Model Conditioned on Histopathology Images and Clinical Descriptions for Gene Expression Profile Generation",
+        "domain": "research",
+        "score": 0.870541,
+        "snippet": "Biomedical research increasingly relies on integrating diverse data modalities, including gene expression profiles, medical images, and clinical metad"
+      },
+      {
+        "rank": 6,
+        "index": 1282,
+        "title": "Uncertainty-guided Generation of Dark-field Radiographs",
+        "domain": "research",
+        "score": 0.859719,
+        "snippet": "X-ray dark-field radiography provides complementary diagnostic information to conventional attenuation imaging by visualizing microstructural tissue c"
+      },
+      {
+        "rank": 7,
+        "index": 890,
+        "title": "Uncertainty-guided Generation of Dark-field Radiographs",
+        "domain": "research",
+        "score": 0.859719,
+        "snippet": "X-ray dark-field radiography provides complementary diagnostic information to conventional attenuation imaging by visualizing microstructural tissue c"
+      },
+      {
+        "rank": 8,
+        "index": 654,
+        "title": "MarketGANs: Multivariate financial time-series data augmentation using generative adversarial networks",
+        "domain": "research",
+        "score": 0.726739,
+        "snippet": "This paper introduces MarketGAN, a factor-based generative framework for high-dimensional asset return generation under severe data scarcity. We embed"
+      },
+      {
+        "rank": 9,
+        "index": 2071,
+        "title": "Orthogonium : A Unified, Efficient Library of Orthogonal and 1-Lipschitz Building Blocks",
+        "domain": "research",
+        "score": 0.644316,
+        "snippet": "Orthogonal and 1-Lipschitz neural network layers are essential building blocks in robust deep learning architectures, crucial for certified adversaria"
+      },
+      {
+        "rank": 10,
+        "index": 1435,
+        "title": "One-Shot Refiner: Boosting Feed-forward Novel View Synthesis via One-Step Diffusion",
+        "domain": "research",
+        "score": 0.429113,
+        "snippet": "We present a novel framework for high-fidelity novel view synthesis (NVS) from sparse images, addressing key limitations in recent feed-forward 3D Gau"
+      }
+    ]
+  },
+  {
+    "id": "r06",
+    "query": "graph neural network node classification",
+    "domain": "research",
+    "hits": [
+      {
+        "rank": 1,
+        "index": 755,
+        "title": "How does Graph Structure Modulate Membership-Inference Risk for Graph Neural Networks?",
+        "domain": "research",
+        "score": 0.999044,
+        "snippet": "Graph neural networks (GNNs) have become the standard tool for encoding data and their complex relationships into continuous representations, improvin"
+      },
+      {
+        "rank": 2,
+        "index": 2486,
+        "title": "Understanding When Graph Convolutional Networks Help: A Diagnostic Study on Label Scarcity and Structural Properties",
+        "domain": "research",
+        "score": 0.99829,
+        "snippet": "Graph Convolutional Networks (GCNs) have become a standard approach for semi-supervised node classification, yet practitioners lack clear guidance on "
+      },
+      {
+        "rank": 3,
+        "index": 473,
+        "title": "Multi-Targeted Graph Backdoor Attack",
+        "domain": "research",
+        "score": 0.997764,
+        "snippet": "Graph neural network (GNN) have demonstrated exceptional performance in solving critical problems across diverse domains yet remain susceptible to bac"
+      },
+      {
+        "rank": 4,
+        "index": 940,
+        "title": "Multi-Targeted Graph Backdoor Attack",
+        "domain": "research",
+        "score": 0.997764,
+        "snippet": "Graph neural network (GNN) have demonstrated exceptional performance in solving critical problems across diverse domains yet remain susceptible to bac"
+      },
+      {
+        "rank": 5,
+        "index": 975,
+        "title": "LoRAP: Low-Rank Aggregation Prompting for Quantized Graph Neural Networks Training",
+        "domain": "research",
+        "score": 0.996765,
+        "snippet": "Graph Neural Networks (GNNs) are neural networks that aim to process graph data, capturing the relationships and interactions between nodes using the "
+      },
+      {
+        "rank": 6,
+        "index": 2343,
+        "title": "BLISS: Bandit Layer Importance Sampling Strategy for Efficient Training of Graph Neural Networks",
+        "domain": "research",
+        "score": 0.992302,
+        "snippet": "Graph Neural Networks (GNNs) are powerful tools for learning from graph-structured data, but their application to large graphs is hindered by computat"
+      },
+      {
+        "rank": 7,
+        "index": 3387,
+        "title": "RELATE: A Schema-Agnostic Perceiver Encoder for Multimodal Relational Graphs",
+        "domain": "research",
+        "score": 0.988044,
+        "snippet": "Relational multi-table data is common in domains such as e-commerce, healthcare, and scientific research, and can be naturally represented as heteroge"
+      },
+      {
+        "rank": 8,
+        "index": 899,
+        "title": "Communication-efficient Federated Graph Classification via Generative Diffusion Modeling",
+        "domain": "research",
+        "score": 0.981449,
+        "snippet": "Graph Neural Networks (GNNs) unlock new ways of learning from graph-structured data, proving highly effective in capturing complex relationships and p"
+      },
+      {
+        "rank": 9,
+        "index": 704,
+        "title": "DREAM: Dual-Standard Semantic Homogeneity with Dynamic Optimization for Graph Learning with Label Noise",
+        "domain": "research",
+        "score": 0.980507,
+        "snippet": "Graph neural networks (GNNs) have been widely used in various graph machine learning scenarios. Existing literature primarily assumes well-annotated t"
+      },
+      {
+        "rank": 10,
+        "index": 819,
+        "title": "BoostFGL: Boosting Fairness in Federated Graph Learning",
+        "domain": "research",
+        "score": 0.969514,
+        "snippet": "Federated graph learning (FGL) enables collaborative training of graph neural networks (GNNs) across decentralized subgraphs without exposing raw data"
+      }
+    ]
+  },
+  {
+    "id": "r07",
+    "query": "knowledge distillation model compression",
+    "domain": "research",
+    "hits": [
+      {
+        "rank": 1,
+        "index": 910,
+        "title": "Integrating Knowledge Distillation Methods: A Sequential Multi-Stage Framework",
+        "domain": "research",
+        "score": 0.995696,
+        "snippet": "Knowledge distillation (KD) transfers knowledge from large teacher models to compact student models, enabling efficient deployment on resource constra"
+      },
+      {
+        "rank": 2,
+        "index": 440,
+        "title": "Integrating Knowledge Distillation Methods: A Sequential Multi-Stage Framework",
+        "domain": "research",
+        "score": 0.995696,
+        "snippet": "Knowledge distillation (KD) transfers knowledge from large teacher models to compact student models, enabling efficient deployment on resource constra"
+      },
+      {
+        "rank": 3,
+        "index": 1513,
+        "title": "Self-Distilled Reasoner: On-Policy Self-Distillation for Large Language Models",
+        "domain": "research",
+        "score": 0.993205,
+        "snippet": "Knowledge distillation improves large language model (LLM) reasoning by compressing the knowledge of a teacher LLM to train smaller LLMs. On-policy di"
+      },
+      {
+        "rank": 4,
+        "index": 516,
+        "title": "Self-Distilled Reasoner: On-Policy Self-Distillation for Large Language Models",
+        "domain": "research",
+        "score": 0.993205,
+        "snippet": "Knowledge distillation improves large language model (LLM) reasoning by compressing the knowledge of a teacher LLM to train smaller LLMs. On-policy di"
+      },
+      {
+        "rank": 5,
+        "index": 1185,
+        "title": "PocketDVDNet: Realtime Video Denoising for Real Camera Noise",
+        "domain": "research",
+        "score": 0.992607,
+        "snippet": "Live video denoising under realistic, multi-component sensor noise remains challenging for applications such as autofocus, autonomous driving, and sur"
+      },
+      {
+        "rank": 6,
+        "index": 1778,
+        "title": "Memorization Dynamics in Knowledge Distillation for Language Models",
+        "domain": "research",
+        "score": 0.991909,
+        "snippet": "Knowledge Distillation (KD) is increasingly adopted to transfer capabilities from large language models to smaller ones, offering significant improvem"
+      },
+      {
+        "rank": 7,
+        "index": 1258,
+        "title": "DSFedMed: Dual-Scale Federated Medical Image Segmentation via Mutual Distillation Between Foundation and Lightweight Models",
+        "domain": "research",
+        "score": 0.944393,
+        "snippet": "Foundation Models (FMs) have demonstrated strong generalization across diverse vision tasks. However, their deployment in federated settings is hinder"
+      },
+      {
+        "rank": 8,
+        "index": 3530,
+        "title": "DSFedMed: Dual-Scale Federated Medical Image Segmentation via Mutual Distillation Between Foundation and Lightweight Models",
+        "domain": "research",
+        "score": 0.944393,
+        "snippet": "Foundation Models (FMs) have demonstrated strong generalization across diverse vision tasks. However, their deployment in federated settings is hinder"
+      },
+      {
+        "rank": 9,
+        "index": 794,
+        "title": "Fast, faithful and photorealistic diffusion-based image super-resolution with enhanced Flow Map models",
+        "domain": "research",
+        "score": 0.900056,
+        "snippet": "Diffusion-based image super-resolution (SR) has recently attracted significant attention by leveraging the expressive power of large pre-trained text-"
+      },
+      {
+        "rank": 10,
+        "index": 1198,
+        "title": "Fast, faithful and photorealistic diffusion-based image super-resolution with enhanced Flow Map models",
+        "domain": "research",
+        "score": 0.900056,
+        "snippet": "Diffusion-based image super-resolution (SR) has recently attracted significant attention by leveraging the expressive power of large pre-trained text-"
+      }
+    ]
+  },
+  {
+    "id": "r08",
+    "query": "federated learning privacy distributed training",
+    "domain": "research",
+    "hits": [
+      {
+        "rank": 1,
+        "index": 3733,
+        "title": "Federated Learning With L0 Constraint Via Probabilistic Gates For Sparsity",
+        "domain": "research",
+        "score": 0.999909,
+        "snippet": "Federated Learning (FL) is a distributed machine learning setting that requires multiple clients to collaborate on training a model while maintaining "
+      },
+      {
+        "rank": 2,
+        "index": 2329,
+        "title": "Federated Learning With L0 Constraint Via Probabilistic Gates For Sparsity",
+        "domain": "research",
+        "score": 0.999909,
+        "snippet": "Federated Learning (FL) is a distributed machine learning setting that requires multiple clients to collaborate on training a model while maintaining "
+      },
+      {
+        "rank": 3,
+        "index": 157,
+        "title": "FedCCA: Client-Centric Adaptation against Data Heterogeneity in Federated Learning on IoT Devices",
+        "domain": "research",
+        "score": 0.999795,
+        "snippet": "With the rapid development of the Internet of Things (IoT), AI model training on private data such as human sensing data is highly desired. Federated "
+      },
+      {
+        "rank": 4,
+        "index": 661,
+        "title": "FedCCA: Client-Centric Adaptation against Data Heterogeneity in Federated Learning on IoT Devices",
+        "domain": "research",
+        "score": 0.999795,
+        "snippet": "With the rapid development of the Internet of Things (IoT), AI model training on private data such as human sensing data is highly desired. Federated "
+      },
+      {
+        "rank": 5,
+        "index": 2374,
+        "title": "Clust-PSI-PFL: A Population Stability Index Approach for Clustered Non-IID Personalized Federated Learning",
+        "domain": "research",
+        "score": 0.999697,
+        "snippet": "Federated learning (FL) supports privacy-preserving, decentralized machine learning (ML) model training by keeping data on client devices. However, no"
+      },
+      {
+        "rank": 6,
+        "index": 3778,
+        "title": "Clust-PSI-PFL: A Population Stability Index Approach for Clustered Non-IID Personalized Federated Learning",
+        "domain": "research",
+        "score": 0.999697,
+        "snippet": "Federated learning (FL) supports privacy-preserving, decentralized machine learning (ML) model training by keeping data on client devices. However, no"
+      },
+      {
+        "rank": 7,
+        "index": 3904,
+        "title": "Clustered Federated Learning with Hierarchical Knowledge Distillation",
+        "domain": "research",
+        "score": 0.999682,
+        "snippet": "Clustered Federated Learning (CFL) has emerged as a powerful approach for addressing data heterogeneity and ensuring privacy in large distributed IoT "
+      },
+      {
+        "rank": 8,
+        "index": 1238,
+        "title": "FeTTL: Federated Template and Task Learning for Multi-Institutional Medical Imaging",
+        "domain": "research",
+        "score": 0.999525,
+        "snippet": "Federated learning enables collaborative model training across geographically distributed medical centers while preserving data privacy. However, doma"
+      },
+      {
+        "rank": 9,
+        "index": 693,
+        "title": "One-Shot Federated Clustering of Non-Independent Completely Distributed Data",
+        "domain": "research",
+        "score": 0.999332,
+        "snippet": "Federated Learning (FL) that extracts data knowledge while protecting the privacy of multiple clients has achieved remarkable results in distributed p"
+      },
+      {
+        "rank": 10,
+        "index": 3855,
+        "title": "Privacy-Preserving Feature Valuation in Vertical Federated Learning Using Shapley-CMI and PSI Permutation",
+        "domain": "research",
+        "score": 0.998489,
+        "snippet": "Federated Learning (FL) is an emerging machine learning paradigm that enables multiple parties to collaboratively train models without sharing raw dat"
+      }
+    ]
+  },
+  {
+    "id": "r09",
+    "query": "diffusion model score matching denoising",
+    "domain": "research",
+    "hits": [
+      {
+        "rank": 1,
+        "index": 1310,
+        "title": "Relative Classification Accuracy: A Calibrated Metric for Identity Consistency in Fine-Grained K-pop Face Generation",
+        "domain": "research",
+        "score": 0.995543,
+        "snippet": "Denoising Diffusion Probabilistic Models (DDPMs) have achieved remarkable success in high-fidelity image generation. However, evaluating their semanti"
+      },
+      {
+        "rank": 2,
+        "index": 2291,
+        "title": "Implicit score matching meets denoising score matching: improved rates of convergence and log-density Hessian estimation",
+        "domain": "research",
+        "score": 0.973653,
+        "snippet": "We study the problem of estimating the score function using both implicit score matching and denoising score matching. Assuming that the data distribu"
+      },
+      {
+        "rank": 3,
+        "index": 2100,
+        "title": "When Are Two Scores Better Than One? Investigating Ensembles of Diffusion Models",
+        "domain": "research",
+        "score": 0.945277,
+        "snippet": "Diffusion models now generate high-quality, diverse samples, with an increasing focus on more powerful models. Although ensembling is a well-known way"
+      },
+      {
+        "rank": 4,
+        "index": 2405,
+        "title": "Weighted Stochastic Differential Equation to Implement Wasserstein-Fisher-Rao Gradient Flow",
+        "domain": "research",
+        "score": 0.934002,
+        "snippet": "Score-based diffusion models currently constitute the state of the art in continuous generative modeling. These methods are typically formulated via o"
+      },
+      {
+        "rank": 5,
+        "index": 2609,
+        "title": "Physics-informed machine learning for reconstruction of dynamical systems with invariant measure score matching",
+        "domain": "research",
+        "score": 0.917003,
+        "snippet": "In this paper, we develop a novel mesh-free framework, termed physics-informed neural networks with invariant measure score matching (PINN-IMSM), for "
+      },
+      {
+        "rank": 6,
+        "index": 2304,
+        "title": "Energy-Tweedie: Score meets Score, Energy meets Energy",
+        "domain": "research",
+        "score": 0.896467,
+        "snippet": "Denoising and score estimation have long been known to be linked via the classical Tweedie's formula. In this work, we first extend the latter to a wi"
+      },
+      {
+        "rank": 7,
+        "index": 2727,
+        "title": "Inference-Time Alignment for Diffusion Models via Doob's Matching",
+        "domain": "research",
+        "score": 0.892368,
+        "snippet": "Inference-time alignment for diffusion models aims to adapt a pre-trained diffusion model toward a target distribution without retraining the base sco"
+      },
+      {
+        "rank": 8,
+        "index": 2176,
+        "title": "Inference-Time Alignment for Diffusion Models via Doob's Matching",
+        "domain": "research",
+        "score": 0.892368,
+        "snippet": "Inference-time alignment for diffusion models aims to adapt a pre-trained diffusion model toward a target distribution without retraining the base sco"
+      },
+      {
+        "rank": 9,
+        "index": 2172,
+        "title": "Diffusion Models with Heavy-Tailed Targets: Score Estimation and Sampling Guarantees",
+        "domain": "research",
+        "score": 0.875383,
+        "snippet": "Score-based diffusion models have become a powerful framework for generative modeling, with score estimation as a central statistical bottleneck. Exis"
+      },
+      {
+        "rank": 10,
+        "index": 1379,
+        "title": "Reconstruction-Anchored Diffusion Model for Text-to-Motion Generation",
+        "domain": "research",
+        "score": 0.868631,
+        "snippet": "Diffusion models have seen widespread adoption for text-driven human motion generation and related tasks due to their impressive generative capabiliti"
+      }
+    ]
+  },
+  {
+    "id": "r10",
+    "query": "contrastive learning self-supervised representation",
+    "domain": "research",
+    "hits": [
+      {
+        "rank": 1,
+        "index": 1411,
+        "title": "From Volumes to Slices: Computationally Efficient Contrastive Learning for Sequential Abdominal CT Analysis",
+        "domain": "research",
+        "score": 0.990725,
+        "snippet": "The requirement for expert annotations limits the effectiveness of deep learning for medical image analysis. Although 3D self-supervised methods like "
+      },
+      {
+        "rank": 2,
+        "index": 1011,
+        "title": "Scale-Aware Self-Supervised Learning for Segmentation of Small and Sparse Structures",
+        "domain": "research",
+        "score": 0.988505,
+        "snippet": "Self-supervised learning (SSL) has emerged as a powerful strategy for representation learning under limited annotation regimes, yet its effectiveness "
+      },
+      {
+        "rank": 3,
+        "index": 1069,
+        "title": "Cross-Domain Transfer with Self-Supervised Spectral-Spatial Modeling for Hyperspectral Image Classification",
+        "domain": "research",
+        "score": 0.987302,
+        "snippet": "Self-supervised learning has demonstrated considerable potential in hyperspectral representation, yet its application in cross-domain transfer scenari"
+      },
+      {
+        "rank": 4,
+        "index": 1205,
+        "title": "A Lightweight Medical Image Classification Framework via Self-Supervised Contrastive Learning and Quantum-Enhanced Feature Modeling",
+        "domain": "research",
+        "score": 0.985888,
+        "snippet": "Intelligent medical image analysis is essential for clinical decision support but is often limited by scarce annotations, constrained computational re"
+      },
+      {
+        "rank": 5,
+        "index": 800,
+        "title": "A Lightweight Medical Image Classification Framework via Self-Supervised Contrastive Learning and Quantum-Enhanced Feature Modeling",
+        "domain": "research",
+        "score": 0.985888,
+        "snippet": "Intelligent medical image analysis is essential for clinical decision support but is often limited by scarce annotations, constrained computational re"
+      },
+      {
+        "rank": 6,
+        "index": 1476,
+        "title": "Revisiting Multi-Task Visual Representation Learning",
+        "domain": "research",
+        "score": 0.980699,
+        "snippet": "Current visual representation learning remains bifurcated: vision-language models (e.g., CLIP) excel at global semantic alignment but lack spatial pre"
+      },
+      {
+        "rank": 7,
+        "index": 861,
+        "title": "Beat-ssl: Capturing Local ECG Morphology through Heartbeat-level Contrastive Learning with Soft Targets",
+        "domain": "research",
+        "score": 0.968608,
+        "snippet": "Obtaining labelled ECG data for developing supervised models is challenging. Contrastive learning (CL) has emerged as a promising pretraining approach"
+      },
+      {
+        "rank": 8,
+        "index": 1423,
+        "title": "Implicit Neural Representation Facilitates Unified Universal Vision Encoding",
+        "domain": "research",
+        "score": 0.963396,
+        "snippet": "Models for image representation learning are typically designed for either recognition or generation. Various forms of contrastive learning help model"
+      },
+      {
+        "rank": 9,
+        "index": 1433,
+        "title": "Progressive self-supervised blind-spot denoising method for LDCT denoising",
+        "domain": "research",
+        "score": 0.777264,
+        "snippet": "Self-supervised learning is increasingly investigated for low-dose computed tomography (LDCT) image denoising, as it alleviates the dependence on pair"
+      },
+      {
+        "rank": 10,
+        "index": 2460,
+        "title": "Understanding the Gain from Data Filtering in Multimodal Contrastive Learning",
+        "domain": "research",
+        "score": 0.707338,
+        "snippet": "The success of modern multimodal representation learning relies on internet-scale datasets. Due to the low quality of a large fraction of raw web data"
+      }
+    ]
+  },
+  {
+    "id": "b01",
+    "query": "how to build a neural network from scratch Python",
+    "domain": "blog",
+    "hits": [
+      {
+        "rank": 1,
+        "index": 4000,
+        "title": "Understanding Neural Networks: A Complete Guide to Deep Learning",
+        "domain": "blog",
+        "score": 0.008047,
+        "snippet": "Neural networks are computational models inspired by biological neurons. They form the foundation of modern deep learning. A neural network consists o"
+      }
+    ]
+  },
+  {
+    "id": "b02",
+    "query": "gradient descent explained step by step beginner",
+    "domain": "blog",
+    "hits": [
+      {
+        "rank": 1,
+        "index": 4035,
+        "title": "Gradient Descent Optimization Explained",
+        "domain": "blog",
+        "score": 0.000197,
+        "snippet": "This foundational concept introduces the mathematical framework. The core idea builds upon previous knowledge. We explore implementation details syste"
+      },
+      {
+        "rank": 2,
+        "index": 4924,
+        "title": "Gradient Descent Optimization Explained",
+        "domain": "blog",
+        "score": 0.000197,
+        "snippet": "This foundational concept introduces the mathematical framework. The core idea builds upon previous knowledge. We explore implementation details syste"
+      },
+      {
+        "rank": 3,
+        "index": 6456,
+        "title": "Gradient Descent Optimization Explained",
+        "domain": "blog",
+        "score": 0.000197,
+        "snippet": "This foundational concept introduces the mathematical framework. The core idea builds upon previous knowledge. We explore implementation details syste"
+      },
+      {
+        "rank": 4,
+        "index": 6691,
+        "title": "Gradient Descent Optimization Explained",
+        "domain": "blog",
+        "score": 0.000197,
+        "snippet": "This foundational concept introduces the mathematical framework. The core idea builds upon previous knowledge. We explore implementation details syste"
+      },
+      {
+        "rank": 5,
+        "index": 5891,
+        "title": "Gradient Descent Optimization Explained",
+        "domain": "blog",
+        "score": 0.000197,
+        "snippet": "This foundational concept introduces the mathematical framework. The core idea builds upon previous knowledge. We explore implementation details syste"
+      },
+      {
+        "rank": 6,
+        "index": 6547,
+        "title": "Gradient Descent Optimization Explained",
+        "domain": "blog",
+        "score": 0.000197,
+        "snippet": "This foundational concept introduces the mathematical framework. The core idea builds upon previous knowledge. We explore implementation details syste"
+      },
+      {
+        "rank": 7,
+        "index": 6475,
+        "title": "Gradient Descent Optimization Explained",
+        "domain": "blog",
+        "score": 0.000197,
+        "snippet": "This foundational concept introduces the mathematical framework. The core idea builds upon previous knowledge. We explore implementation details syste"
+      },
+      {
+        "rank": 8,
+        "index": 4512,
+        "title": "Gradient Descent Optimization Explained",
+        "domain": "blog",
+        "score": 0.000197,
+        "snippet": "This foundational concept introduces the mathematical framework. The core idea builds upon previous knowledge. We explore implementation details syste"
+      },
+      {
+        "rank": 9,
+        "index": 5163,
+        "title": "Gradient Descent Optimization Explained",
+        "domain": "blog",
+        "score": 0.000197,
+        "snippet": "This foundational concept introduces the mathematical framework. The core idea builds upon previous knowledge. We explore implementation details syste"
+      },
+      {
+        "rank": 10,
+        "index": 4522,
+        "title": "Gradient Descent Optimization Explained",
+        "domain": "blog",
+        "score": 0.000197,
+        "snippet": "This foundational concept introduces the mathematical framework. The core idea builds upon previous knowledge. We explore implementation details syste"
+      }
+    ]
+  },
+  {
+    "id": "b03",
+    "query": "overfitting regularisation dropout tutorial",
+    "domain": "blog",
+    "hits": [
+      {
+        "rank": 1,
+        "index": 4009,
+        "title": "Regularization Techniques: L1, L2, and Elastic Net",
+        "domain": "blog",
+        "score": 0.468283,
+        "snippet": "Regularization prevents overfitting by constraining model complexity. L2 regularization adds squared weights to loss. It shrinks all weights toward ze"
+      },
+      {
+        "rank": 2,
+        "index": 4011,
+        "title": "Hyperparameter Tuning: Grid Search vs Random Search",
+        "domain": "blog",
+        "score": 6.2e-05,
+        "snippet": "Hyperparameters control learning process. Learning rate, batch size, regularization are examples. Grid search exhaustively tries combinations. It's th"
+      },
+      {
+        "rank": 3,
+        "index": 4000,
+        "title": "Understanding Neural Networks: A Complete Guide to Deep Learning",
+        "domain": "blog",
+        "score": 1.2e-05,
+        "snippet": "Neural networks are computational models inspired by biological neurons. They form the foundation of modern deep learning. A neural network consists o"
+      }
+    ]
+  },
+  {
+    "id": "b04",
+    "query": "how does LSTM work sequence modelling explained",
+    "domain": "blog",
+    "hits": []
+  },
+  {
+    "id": "b05",
+    "query": "pandas data preprocessing machine learning guide",
+    "domain": "blog",
+    "hits": []
+  },
+  {
+    "id": "b06",
+    "query": "transfer learning practical guide fine-tuning pretrained models",
+    "domain": "blog",
+    "hits": [
+      {
+        "rank": 1,
+        "index": 6807,
+        "title": "Cross-Validation Strategies for Model Selection",
+        "domain": "blog",
+        "score": 1.3e-05,
+        "snippet": "This foundational concept introduces the mathematical framework. The core idea builds upon previous knowledge. We explore implementation details syste"
+      },
+      {
+        "rank": 2,
+        "index": 6488,
+        "title": "Cross-Validation Strategies for Model Selection",
+        "domain": "blog",
+        "score": 1.3e-05,
+        "snippet": "This foundational concept introduces the mathematical framework. The core idea builds upon previous knowledge. We explore implementation details syste"
+      },
+      {
+        "rank": 3,
+        "index": 6434,
+        "title": "Cross-Validation Strategies for Model Selection",
+        "domain": "blog",
+        "score": 1.3e-05,
+        "snippet": "This foundational concept introduces the mathematical framework. The core idea builds upon previous knowledge. We explore implementation details syste"
+      },
+      {
+        "rank": 4,
+        "index": 6416,
+        "title": "Cross-Validation Strategies for Model Selection",
+        "domain": "blog",
+        "score": 1.3e-05,
+        "snippet": "This foundational concept introduces the mathematical framework. The core idea builds upon previous knowledge. We explore implementation details syste"
+      },
+      {
+        "rank": 5,
+        "index": 6227,
+        "title": "Cross-Validation Strategies for Model Selection",
+        "domain": "blog",
+        "score": 1.3e-05,
+        "snippet": "This foundational concept introduces the mathematical framework. The core idea builds upon previous knowledge. We explore implementation details syste"
+      },
+      {
+        "rank": 6,
+        "index": 6018,
+        "title": "Cross-Validation Strategies for Model Selection",
+        "domain": "blog",
+        "score": 1.3e-05,
+        "snippet": "This foundational concept introduces the mathematical framework. The core idea builds upon previous knowledge. We explore implementation details syste"
+      },
+      {
+        "rank": 7,
+        "index": 5991,
+        "title": "Cross-Validation Strategies for Model Selection",
+        "domain": "blog",
+        "score": 1.3e-05,
+        "snippet": "This foundational concept introduces the mathematical framework. The core idea builds upon previous knowledge. We explore implementation details syste"
+      },
+      {
+        "rank": 8,
+        "index": 5736,
+        "title": "Cross-Validation Strategies for Model Selection",
+        "domain": "blog",
+        "score": 1.3e-05,
+        "snippet": "This foundational concept introduces the mathematical framework. The core idea builds upon previous knowledge. We explore implementation details syste"
+      },
+      {
+        "rank": 9,
+        "index": 5703,
+        "title": "Cross-Validation Strategies for Model Selection",
+        "domain": "blog",
+        "score": 1.3e-05,
+        "snippet": "This foundational concept introduces the mathematical framework. The core idea builds upon previous knowledge. We explore implementation details syste"
+      },
+      {
+        "rank": 10,
+        "index": 5475,
+        "title": "Cross-Validation Strategies for Model Selection",
+        "domain": "blog",
+        "score": 1.3e-05,
+        "snippet": "This foundational concept introduces the mathematical framework. The core idea builds upon previous knowledge. We explore implementation details syste"
+      }
+    ]
+  },
+  {
+    "id": "b07",
+    "query": "random forest vs gradient boosting comparison tutorial",
+    "domain": "blog",
+    "hits": [
+      {
+        "rank": 1,
+        "index": 4011,
+        "title": "Hyperparameter Tuning: Grid Search vs Random Search",
+        "domain": "blog",
+        "score": 2.2e-05,
+        "snippet": "Hyperparameters control learning process. Learning rate, batch size, regularization are examples. Grid search exhaustively tries combinations. It's th"
+      },
+      {
+        "rank": 2,
+        "index": 4010,
+        "title": "Model Evaluation: Metrics Beyond Accuracy",
+        "domain": "blog",
+        "score": 1.5e-05,
+        "snippet": "Accuracy counts correct predictions. Misleading when classes are imbalanced. Precision measures false positive rate. It answers: are positive predicti"
+      },
+      {
+        "rank": 3,
+        "index": 4003,
+        "title": "Classification Models: Logistic Regression vs Decision Trees",
+        "domain": "blog",
+        "score": 1.2e-05,
+        "snippet": "Classification predicts categorical target variables. Logistic regression models probability of class membership. The sigmoid function transforms outp"
+      },
+      {
+        "rank": 4,
+        "index": 6691,
+        "title": "Gradient Descent Optimization Explained",
+        "domain": "blog",
+        "score": 1.1e-05,
+        "snippet": "This foundational concept introduces the mathematical framework. The core idea builds upon previous knowledge. We explore implementation details syste"
+      },
+      {
+        "rank": 5,
+        "index": 6547,
+        "title": "Gradient Descent Optimization Explained",
+        "domain": "blog",
+        "score": 1.1e-05,
+        "snippet": "This foundational concept introduces the mathematical framework. The core idea builds upon previous knowledge. We explore implementation details syste"
+      },
+      {
+        "rank": 6,
+        "index": 6475,
+        "title": "Gradient Descent Optimization Explained",
+        "domain": "blog",
+        "score": 1.1e-05,
+        "snippet": "This foundational concept introduces the mathematical framework. The core idea builds upon previous knowledge. We explore implementation details syste"
+      },
+      {
+        "rank": 7,
+        "index": 6456,
+        "title": "Gradient Descent Optimization Explained",
+        "domain": "blog",
+        "score": 1.1e-05,
+        "snippet": "This foundational concept introduces the mathematical framework. The core idea builds upon previous knowledge. We explore implementation details syste"
+      },
+      {
+        "rank": 8,
+        "index": 5982,
+        "title": "Gradient Descent Optimization Explained",
+        "domain": "blog",
+        "score": 1.1e-05,
+        "snippet": "This foundational concept introduces the mathematical framework. The core idea builds upon previous knowledge. We explore implementation details syste"
+      },
+      {
+        "rank": 9,
+        "index": 5891,
+        "title": "Gradient Descent Optimization Explained",
+        "domain": "blog",
+        "score": 1.1e-05,
+        "snippet": "This foundational concept introduces the mathematical framework. The core idea builds upon previous knowledge. We explore implementation details syste"
+      },
+      {
+        "rank": 10,
+        "index": 5163,
+        "title": "Gradient Descent Optimization Explained",
+        "domain": "blog",
+        "score": 1.1e-05,
+        "snippet": "This foundational concept introduces the mathematical framework. The core idea builds upon previous knowledge. We explore implementation details syste"
+      }
+    ]
+  },
+  {
+    "id": "b08",
+    "query": "visualising neural network weights and activations",
+    "domain": "blog",
+    "hits": [
+      {
+        "rank": 1,
+        "index": 4000,
+        "title": "Understanding Neural Networks: A Complete Guide to Deep Learning",
+        "domain": "blog",
+        "score": 0.538893,
+        "snippet": "Neural networks are computational models inspired by biological neurons. They form the foundation of modern deep learning. A neural network consists o"
+      }
+    ]
+  },
+  {
+    "id": "d01",
+    "query": "PyTorch tensor operations autograd backward",
+    "domain": "documentation",
+    "hits": [
+      {
+        "rank": 1,
+        "index": 7012,
+        "title": "torch.tensor",
+        "domain": "documentation",
+        "score": 0.330217,
+        "snippet": "Creates tensor from data. Accepts lists, numpy arrays, scalars. Specifies dtype and device (CPU/GPU). Returns PyTorch tensor for computation. Core dat"
+      },
+      {
+        "rank": 2,
+        "index": 8946,
+        "title": "torch.nn.ReLU",
+        "domain": "documentation",
+        "score": 0.029121,
+        "snippet": "torch.nn.ReLU is a crucial PyTorch layer for deep learning. It implements mathematical operations essential for neural networks. The layer is fully di"
+      },
+      {
+        "rank": 3,
+        "index": 8921,
+        "title": "torch.nn.ReLU",
+        "domain": "documentation",
+        "score": 0.029121,
+        "snippet": "torch.nn.ReLU is a crucial PyTorch layer for deep learning. It implements mathematical operations essential for neural networks. The layer is fully di"
+      },
+      {
+        "rank": 4,
+        "index": 8916,
+        "title": "torch.nn.ReLU",
+        "domain": "documentation",
+        "score": 0.029121,
+        "snippet": "torch.nn.ReLU is a crucial PyTorch layer for deep learning. It implements mathematical operations essential for neural networks. The layer is fully di"
+      },
+      {
+        "rank": 5,
+        "index": 8906,
+        "title": "torch.nn.ReLU",
+        "domain": "documentation",
+        "score": 0.029121,
+        "snippet": "torch.nn.ReLU is a crucial PyTorch layer for deep learning. It implements mathematical operations essential for neural networks. The layer is fully di"
+      },
+      {
+        "rank": 6,
+        "index": 8890,
+        "title": "torch.nn.ReLU",
+        "domain": "documentation",
+        "score": 0.029121,
+        "snippet": "torch.nn.ReLU is a crucial PyTorch layer for deep learning. It implements mathematical operations essential for neural networks. The layer is fully di"
+      },
+      {
+        "rank": 7,
+        "index": 8847,
+        "title": "torch.nn.ReLU",
+        "domain": "documentation",
+        "score": 0.029121,
+        "snippet": "torch.nn.ReLU is a crucial PyTorch layer for deep learning. It implements mathematical operations essential for neural networks. The layer is fully di"
+      },
+      {
+        "rank": 8,
+        "index": 8816,
+        "title": "torch.nn.ReLU",
+        "domain": "documentation",
+        "score": 0.029121,
+        "snippet": "torch.nn.ReLU is a crucial PyTorch layer for deep learning. It implements mathematical operations essential for neural networks. The layer is fully di"
+      },
+      {
+        "rank": 9,
+        "index": 8750,
+        "title": "torch.nn.ReLU",
+        "domain": "documentation",
+        "score": 0.029121,
+        "snippet": "torch.nn.ReLU is a crucial PyTorch layer for deep learning. It implements mathematical operations essential for neural networks. The layer is fully di"
+      },
+      {
+        "rank": 10,
+        "index": 8738,
+        "title": "torch.nn.ReLU",
+        "domain": "documentation",
+        "score": 0.029121,
+        "snippet": "torch.nn.ReLU is a crucial PyTorch layer for deep learning. It implements mathematical operations essential for neural networks. The layer is fully di"
+      }
+    ]
+  },
+  {
+    "id": "d02",
+    "query": "scikit-learn Pipeline fit transform parameters",
+    "domain": "documentation",
+    "hits": [
+      {
+        "rank": 1,
+        "index": 7903,
+        "title": "sklearn.metrics.score",
+        "domain": "documentation",
+        "score": 0.994543,
+        "snippet": "sklearn.metrics.score is a standard scikit-learn component for machine learning workflows. It follows the consistent fit-transform API pattern. The co"
+      },
+      {
+        "rank": 2,
+        "index": 7897,
+        "title": "sklearn.metrics.score",
+        "domain": "documentation",
+        "score": 0.994543,
+        "snippet": "sklearn.metrics.score is a standard scikit-learn component for machine learning workflows. It follows the consistent fit-transform API pattern. The co"
+      },
+      {
+        "rank": 3,
+        "index": 7896,
+        "title": "sklearn.metrics.score",
+        "domain": "documentation",
+        "score": 0.994543,
+        "snippet": "sklearn.metrics.score is a standard scikit-learn component for machine learning workflows. It follows the consistent fit-transform API pattern. The co"
+      },
+      {
+        "rank": 4,
+        "index": 8368,
+        "title": "sklearn.metrics.score",
+        "domain": "documentation",
+        "score": 0.994543,
+        "snippet": "sklearn.metrics.score is a standard scikit-learn component for machine learning workflows. It follows the consistent fit-transform API pattern. The co"
+      },
+      {
+        "rank": 5,
+        "index": 8961,
+        "title": "sklearn.metrics.score",
+        "domain": "documentation",
+        "score": 0.994543,
+        "snippet": "sklearn.metrics.score is a standard scikit-learn component for machine learning workflows. It follows the consistent fit-transform API pattern. The co"
+      },
+      {
+        "rank": 6,
+        "index": 7920,
+        "title": "sklearn.ensemble.Classifier",
+        "domain": "documentation",
+        "score": 0.993654,
+        "snippet": "sklearn.ensemble.Classifier is a standard scikit-learn component for machine learning workflows. It follows the consistent fit-transform API pattern. "
+      },
+      {
+        "rank": 7,
+        "index": 7916,
+        "title": "sklearn.ensemble.Classifier",
+        "domain": "documentation",
+        "score": 0.993654,
+        "snippet": "sklearn.ensemble.Classifier is a standard scikit-learn component for machine learning workflows. It follows the consistent fit-transform API pattern. "
+      },
+      {
+        "rank": 8,
+        "index": 7907,
+        "title": "sklearn.ensemble.Classifier",
+        "domain": "documentation",
+        "score": 0.993654,
+        "snippet": "sklearn.ensemble.Classifier is a standard scikit-learn component for machine learning workflows. It follows the consistent fit-transform API pattern. "
+      },
+      {
+        "rank": 9,
+        "index": 8367,
+        "title": "sklearn.ensemble.Classifier",
+        "domain": "documentation",
+        "score": 0.993654,
+        "snippet": "sklearn.ensemble.Classifier is a standard scikit-learn component for machine learning workflows. It follows the consistent fit-transform API pattern. "
+      },
+      {
+        "rank": 10,
+        "index": 8971,
+        "title": "sklearn.ensemble.Classifier",
+        "domain": "documentation",
+        "score": 0.993654,
+        "snippet": "sklearn.ensemble.Classifier is a standard scikit-learn component for machine learning workflows. It follows the consistent fit-transform API pattern. "
+      }
+    ]
+  },
+  {
+    "id": "d03",
+    "query": "NumPy array broadcasting reshape indexing",
+    "domain": "documentation",
+    "hits": [
+      {
+        "rank": 1,
+        "index": 8958,
+        "title": "numpy.reshape",
+        "domain": "documentation",
+        "score": 0.991571,
+        "snippet": "numpy.reshape is a fundamental NumPy operation for array manipulation. It provides optimized computation for numerical data. The operation handles hig"
+      },
+      {
+        "rank": 2,
+        "index": 8953,
+        "title": "numpy.reshape",
+        "domain": "documentation",
+        "score": 0.991571,
+        "snippet": "numpy.reshape is a fundamental NumPy operation for array manipulation. It provides optimized computation for numerical data. The operation handles hig"
+      },
+      {
+        "rank": 3,
+        "index": 8860,
+        "title": "numpy.reshape",
+        "domain": "documentation",
+        "score": 0.991571,
+        "snippet": "numpy.reshape is a fundamental NumPy operation for array manipulation. It provides optimized computation for numerical data. The operation handles hig"
+      },
+      {
+        "rank": 4,
+        "index": 8834,
+        "title": "numpy.reshape",
+        "domain": "documentation",
+        "score": 0.991571,
+        "snippet": "numpy.reshape is a fundamental NumPy operation for array manipulation. It provides optimized computation for numerical data. The operation handles hig"
+      },
+      {
+        "rank": 5,
+        "index": 8813,
+        "title": "numpy.reshape",
+        "domain": "documentation",
+        "score": 0.991571,
+        "snippet": "numpy.reshape is a fundamental NumPy operation for array manipulation. It provides optimized computation for numerical data. The operation handles hig"
+      },
+      {
+        "rank": 6,
+        "index": 8787,
+        "title": "numpy.reshape",
+        "domain": "documentation",
+        "score": 0.991571,
+        "snippet": "numpy.reshape is a fundamental NumPy operation for array manipulation. It provides optimized computation for numerical data. The operation handles hig"
+      },
+      {
+        "rank": 7,
+        "index": 8779,
+        "title": "numpy.reshape",
+        "domain": "documentation",
+        "score": 0.991571,
+        "snippet": "numpy.reshape is a fundamental NumPy operation for array manipulation. It provides optimized computation for numerical data. The operation handles hig"
+      },
+      {
+        "rank": 8,
+        "index": 8776,
+        "title": "numpy.reshape",
+        "domain": "documentation",
+        "score": 0.991571,
+        "snippet": "numpy.reshape is a fundamental NumPy operation for array manipulation. It provides optimized computation for numerical data. The operation handles hig"
+      },
+      {
+        "rank": 9,
+        "index": 8759,
+        "title": "numpy.reshape",
+        "domain": "documentation",
+        "score": 0.991571,
+        "snippet": "numpy.reshape is a fundamental NumPy operation for array manipulation. It provides optimized computation for numerical data. The operation handles hig"
+      },
+      {
+        "rank": 10,
+        "index": 8753,
+        "title": "numpy.reshape",
+        "domain": "documentation",
+        "score": 0.991571,
+        "snippet": "numpy.reshape is a fundamental NumPy operation for array manipulation. It provides optimized computation for numerical data. The operation handles hig"
+      }
+    ]
+  },
+  {
+    "id": "d04",
+    "query": "PyTorch DataLoader Dataset batch size shuffle",
+    "domain": "documentation",
+    "hits": [
+      {
+        "rank": 1,
+        "index": 7012,
+        "title": "torch.tensor",
+        "domain": "documentation",
+        "score": 0.002932,
+        "snippet": "Creates tensor from data. Accepts lists, numpy arrays, scalars. Specifies dtype and device (CPU/GPU). Returns PyTorch tensor for computation. Core dat"
+      },
+      {
+        "rank": 2,
+        "index": 7045,
+        "title": "torch.nn.MaxPool2d",
+        "domain": "documentation",
+        "score": 0.001338,
+        "snippet": "torch.nn.MaxPool2d is an important PyTorch function. It provides efficient implementation of common machine learning operations. This function is wide"
+      },
+      {
+        "rank": 3,
+        "index": 7004,
+        "title": "torch.nn.BatchNorm2d",
+        "domain": "documentation",
+        "score": 1.5e-05,
+        "snippet": "Batch normalization normalizes layer inputs reducing internal covariate shift. During training, normalization is computed per batch enabling training "
+      }
+    ]
+  },
+  {
+    "id": "d05",
+    "query": "scikit-learn cross_val_score GridSearchCV hyperparameter",
+    "domain": "documentation",
+    "hits": [
+      {
+        "rank": 1,
+        "index": 7063,
+        "title": "sklearn.model_selection.cross_val_score",
+        "domain": "documentation",
+        "score": 0.973911,
+        "snippet": "sklearn.model_selection.cross_val_score is an important scikit-learn function. It provides efficient implementation of common machine learning operati"
+      },
+      {
+        "rank": 2,
+        "index": 8988,
+        "title": "sklearn.metrics.score",
+        "domain": "documentation",
+        "score": 0.70809,
+        "snippet": "sklearn.metrics.score is a standard scikit-learn component for machine learning workflows. It follows the consistent fit-transform API pattern. The co"
+      },
+      {
+        "rank": 3,
+        "index": 8951,
+        "title": "sklearn.metrics.score",
+        "domain": "documentation",
+        "score": 0.70809,
+        "snippet": "sklearn.metrics.score is a standard scikit-learn component for machine learning workflows. It follows the consistent fit-transform API pattern. The co"
+      },
+      {
+        "rank": 4,
+        "index": 8931,
+        "title": "sklearn.metrics.score",
+        "domain": "documentation",
+        "score": 0.70809,
+        "snippet": "sklearn.metrics.score is a standard scikit-learn component for machine learning workflows. It follows the consistent fit-transform API pattern. The co"
+      },
+      {
+        "rank": 5,
+        "index": 8745,
+        "title": "sklearn.metrics.score",
+        "domain": "documentation",
+        "score": 0.70809,
+        "snippet": "sklearn.metrics.score is a standard scikit-learn component for machine learning workflows. It follows the consistent fit-transform API pattern. The co"
+      },
+      {
+        "rank": 6,
+        "index": 8744,
+        "title": "sklearn.metrics.score",
+        "domain": "documentation",
+        "score": 0.70809,
+        "snippet": "sklearn.metrics.score is a standard scikit-learn component for machine learning workflows. It follows the consistent fit-transform API pattern. The co"
+      },
+      {
+        "rank": 7,
+        "index": 8730,
+        "title": "sklearn.metrics.score",
+        "domain": "documentation",
+        "score": 0.70809,
+        "snippet": "sklearn.metrics.score is a standard scikit-learn component for machine learning workflows. It follows the consistent fit-transform API pattern. The co"
+      },
+      {
+        "rank": 8,
+        "index": 8570,
+        "title": "sklearn.metrics.score",
+        "domain": "documentation",
+        "score": 0.70809,
+        "snippet": "sklearn.metrics.score is a standard scikit-learn component for machine learning workflows. It follows the consistent fit-transform API pattern. The co"
+      },
+      {
+        "rank": 9,
+        "index": 8527,
+        "title": "sklearn.metrics.score",
+        "domain": "documentation",
+        "score": 0.70809,
+        "snippet": "sklearn.metrics.score is a standard scikit-learn component for machine learning workflows. It follows the consistent fit-transform API pattern. The co"
+      },
+      {
+        "rank": 10,
+        "index": 8524,
+        "title": "sklearn.metrics.score",
+        "domain": "documentation",
+        "score": 0.70809,
+        "snippet": "sklearn.metrics.score is a standard scikit-learn component for machine learning workflows. It follows the consistent fit-transform API pattern. The co"
+      }
+    ]
+  },
+  {
+    "id": "d06",
+    "query": "NumPy linalg linear algebra matrix operations",
+    "domain": "documentation",
+    "hits": [
+      {
+        "rank": 1,
+        "index": 8938,
+        "title": "numpy.linalg.solve",
+        "domain": "documentation",
+        "score": 0.997837,
+        "snippet": "numpy.linalg.solve is a fundamental NumPy operation for array manipulation. It provides optimized computation for numerical data. The operation handle"
+      },
+      {
+        "rank": 2,
+        "index": 8937,
+        "title": "numpy.linalg.solve",
+        "domain": "documentation",
+        "score": 0.997837,
+        "snippet": "numpy.linalg.solve is a fundamental NumPy operation for array manipulation. It provides optimized computation for numerical data. The operation handle"
+      },
+      {
+        "rank": 3,
+        "index": 8927,
+        "title": "numpy.linalg.solve",
+        "domain": "documentation",
+        "score": 0.997837,
+        "snippet": "numpy.linalg.solve is a fundamental NumPy operation for array manipulation. It provides optimized computation for numerical data. The operation handle"
+      },
+      {
+        "rank": 4,
+        "index": 8922,
+        "title": "numpy.linalg.solve",
+        "domain": "documentation",
+        "score": 0.997837,
+        "snippet": "numpy.linalg.solve is a fundamental NumPy operation for array manipulation. It provides optimized computation for numerical data. The operation handle"
+      },
+      {
+        "rank": 5,
+        "index": 8920,
+        "title": "numpy.linalg.solve",
+        "domain": "documentation",
+        "score": 0.997837,
+        "snippet": "numpy.linalg.solve is a fundamental NumPy operation for array manipulation. It provides optimized computation for numerical data. The operation handle"
+      },
+      {
+        "rank": 6,
+        "index": 8912,
+        "title": "numpy.linalg.solve",
+        "domain": "documentation",
+        "score": 0.997837,
+        "snippet": "numpy.linalg.solve is a fundamental NumPy operation for array manipulation. It provides optimized computation for numerical data. The operation handle"
+      },
+      {
+        "rank": 7,
+        "index": 8837,
+        "title": "numpy.linalg.solve",
+        "domain": "documentation",
+        "score": 0.997837,
+        "snippet": "numpy.linalg.solve is a fundamental NumPy operation for array manipulation. It provides optimized computation for numerical data. The operation handle"
+      },
+      {
+        "rank": 8,
+        "index": 8741,
+        "title": "numpy.linalg.solve",
+        "domain": "documentation",
+        "score": 0.997837,
+        "snippet": "numpy.linalg.solve is a fundamental NumPy operation for array manipulation. It provides optimized computation for numerical data. The operation handle"
+      },
+      {
+        "rank": 9,
+        "index": 8709,
+        "title": "numpy.linalg.solve",
+        "domain": "documentation",
+        "score": 0.997837,
+        "snippet": "numpy.linalg.solve is a fundamental NumPy operation for array manipulation. It provides optimized computation for numerical data. The operation handle"
+      },
+      {
+        "rank": 10,
+        "index": 8699,
+        "title": "numpy.linalg.solve",
+        "domain": "documentation",
+        "score": 0.997837,
+        "snippet": "numpy.linalg.solve is a fundamental NumPy operation for array manipulation. It provides optimized computation for numerical data. The operation handle"
+      }
+    ]
+  },
+  {
+    "id": "d07",
+    "query": "PyTorch nn.Module forward method layer definition",
+    "domain": "documentation",
+    "hits": [
+      {
+        "rank": 1,
+        "index": 7048,
+        "title": "torch.nn.Module",
+        "domain": "documentation",
+        "score": 0.984211,
+        "snippet": "torch.nn.Module is an important PyTorch function. It provides efficient implementation of common machine learning operations. This function is widely "
+      },
+      {
+        "rank": 2,
+        "index": 8925,
+        "title": "torch.nn.Linear",
+        "domain": "documentation",
+        "score": 0.948581,
+        "snippet": "torch.nn.Linear is a crucial PyTorch layer for deep learning. It implements mathematical operations essential for neural networks. The layer is fully "
+      },
+      {
+        "rank": 3,
+        "index": 8914,
+        "title": "torch.nn.Linear",
+        "domain": "documentation",
+        "score": 0.948581,
+        "snippet": "torch.nn.Linear is a crucial PyTorch layer for deep learning. It implements mathematical operations essential for neural networks. The layer is fully "
+      },
+      {
+        "rank": 4,
+        "index": 8905,
+        "title": "torch.nn.Linear",
+        "domain": "documentation",
+        "score": 0.948581,
+        "snippet": "torch.nn.Linear is a crucial PyTorch layer for deep learning. It implements mathematical operations essential for neural networks. The layer is fully "
+      },
+      {
+        "rank": 5,
+        "index": 8886,
+        "title": "torch.nn.Linear",
+        "domain": "documentation",
+        "score": 0.948581,
+        "snippet": "torch.nn.Linear is a crucial PyTorch layer for deep learning. It implements mathematical operations essential for neural networks. The layer is fully "
+      },
+      {
+        "rank": 6,
+        "index": 8833,
+        "title": "torch.nn.Linear",
+        "domain": "documentation",
+        "score": 0.948581,
+        "snippet": "torch.nn.Linear is a crucial PyTorch layer for deep learning. It implements mathematical operations essential for neural networks. The layer is fully "
+      },
+      {
+        "rank": 7,
+        "index": 8812,
+        "title": "torch.nn.Linear",
+        "domain": "documentation",
+        "score": 0.948581,
+        "snippet": "torch.nn.Linear is a crucial PyTorch layer for deep learning. It implements mathematical operations essential for neural networks. The layer is fully "
+      },
+      {
+        "rank": 8,
+        "index": 8708,
+        "title": "torch.nn.Linear",
+        "domain": "documentation",
+        "score": 0.948581,
+        "snippet": "torch.nn.Linear is a crucial PyTorch layer for deep learning. It implements mathematical operations essential for neural networks. The layer is fully "
+      },
+      {
+        "rank": 9,
+        "index": 8346,
+        "title": "torch.nn.Linear",
+        "domain": "documentation",
+        "score": 0.948581,
+        "snippet": "torch.nn.Linear is a crucial PyTorch layer for deep learning. It implements mathematical operations essential for neural networks. The layer is fully "
+      },
+      {
+        "rank": 10,
+        "index": 8692,
+        "title": "torch.nn.Linear",
+        "domain": "documentation",
+        "score": 0.948581,
+        "snippet": "torch.nn.Linear is a crucial PyTorch layer for deep learning. It implements mathematical operations essential for neural networks. The layer is fully "
+      }
+    ]
+  }
+]

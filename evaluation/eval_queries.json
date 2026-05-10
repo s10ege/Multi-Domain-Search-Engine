@@ -1,0 +1,177 @@
+[
+  {
+    "id": "r01",
+    "query": "transformer attention mechanism self-attention",
+    "domain": "research",
+    "relevant_indices": [1866, 1444, 1497, 717, 633],
+    "notes": "5/10 results relevant. Items at ranks 5-6 (MambaNet) and 8-10 (PRISM interpretability) were excluded as tangential."
+  },
+  {
+    "id": "r02",
+    "query": "convolutional neural network image classification",
+    "domain": "research",
+    "relevant_indices": [1228, 1287, 408, 1397],
+    "notes": "4/10 relevant. Flower recognition CNN and cosine network for super-resolution are directly relevant. GCN (2486) and U-Net (746) excluded."
+  },
+  {
+    "id": "r03",
+    "query": "reinforcement learning policy gradient reward",
+    "domain": "research",
+    "relevant_indices": [506, 5, 1507, 2004, 541, 34, 1501, 1, 501, 561],
+    "notes": "10/10 relevant. All results are on-topic RL papers (POPE, PrefixRL, natural policy gradients, continual RL). Several duplicate indices in corpus."
+  },
+  {
+    "id": "r04",
+    "query": "BERT language model pre-training fine-tuning NLP",
+    "domain": "research",
+    "relevant_indices": [1563, 3568, 3457, 1725, 373, 3671, 2232, 526],
+    "notes": "8/10 relevant. Remote sensing CLIP (1058) and text-based person search (1363) excluded as off-topic from the NLP fine-tuning query."
+  },
+  {
+    "id": "r05",
+    "query": "generative adversarial network image synthesis",
+    "domain": "research",
+    "relevant_indices": [1302, 951, 1324, 486],
+    "notes": "4/10 relevant. HyperNet diffusion (979), dark-field radiograph generation (1282), MarketGANs financial (654), and orthogonal nets (2071) excluded."
+  },
+  {
+    "id": "r06",
+    "query": "graph neural network node classification",
+    "domain": "research",
+    "relevant_indices": [755, 2486, 473, 940, 975, 2343, 899, 704, 819],
+    "notes": "9/10 relevant. RELATE multimodal perceiver (3387) excluded as not specifically about GNN node classification."
+  },
+  {
+    "id": "r07",
+    "query": "knowledge distillation model compression",
+    "domain": "research",
+    "relevant_indices": [910, 440, 1513, 516, 1778, 1258, 3530],
+    "notes": "7/10 relevant. PocketDVDNet video denoising (1185) and diffusion super-resolution (794, 1198) excluded as off-topic."
+  },
+  {
+    "id": "r08",
+    "query": "federated learning privacy distributed training",
+    "domain": "research",
+    "relevant_indices": [3733, 2329, 157, 661, 2374, 3778, 3904, 1238, 693, 3855],
+    "notes": "10/10 relevant. All results are federated learning papers covering privacy, data heterogeneity, clustering, and vertical FL."
+  },
+  {
+    "id": "r09",
+    "query": "diffusion model score matching denoising",
+    "domain": "research",
+    "relevant_indices": [1310, 2291, 2100, 2405, 2609, 2304, 2727, 2176, 2172, 1379],
+    "notes": "10/10 relevant. All results are about score-based diffusion models, score matching, or denoising diffusion."
+  },
+  {
+    "id": "r10",
+    "query": "contrastive learning self-supervised representation",
+    "domain": "research",
+    "relevant_indices": [1411, 1011, 1069, 1205, 800, 1476, 861, 1423, 1433, 2460],
+    "notes": "10/10 relevant. All results are SSL / contrastive learning papers, mostly in medical imaging but clearly on-topic."
+  },
+  {
+    "id": "b01",
+    "query": "how to build a neural network from scratch Python",
+    "domain": "blog",
+    "relevant_indices": [4000],
+    "notes": "1/1 result returned and relevant. System returned only 1 blog result with score 0.008, indicating weak retrieval for tutorial queries."
+  },
+  {
+    "id": "b02",
+    "query": "gradient descent explained step by step beginner",
+    "domain": "blog",
+    "relevant_indices": [4035, 4924, 6456, 6691, 5891, 6547, 6475, 4512, 5163, 4522],
+    "notes": "10/10 results are the same blog post 'Gradient Descent Optimization Explained' indexed at multiple positions. All relevant but corpus has duplicate entries. Score 0.0002 indicates very weak match."
+  },
+  {
+    "id": "b03",
+    "query": "overfitting regularisation dropout tutorial",
+    "domain": "blog",
+    "relevant_indices": [4009, 4000],
+    "notes": "2/3 results relevant. Regularization Techniques (4009) and Neural Networks guide (4000) are relevant. Hyperparameter Tuning (4011) excluded."
+  },
+  {
+    "id": "b04",
+    "query": "how does LSTM work sequence modelling explained",
+    "domain": "blog",
+    "relevant_indices": [],
+    "notes": "0 results returned. Blog domain lacks LSTM/sequence modelling content or these documents are not indexed effectively."
+  },
+  {
+    "id": "b05",
+    "query": "pandas data preprocessing machine learning guide",
+    "domain": "blog",
+    "relevant_indices": [],
+    "notes": "0 results returned. Pandas/data preprocessing content is absent from the blog corpus or not retrievable."
+  },
+  {
+    "id": "b06",
+    "query": "transfer learning practical guide fine-tuning pretrained models",
+    "domain": "blog",
+    "relevant_indices": [],
+    "notes": "10 results returned but ALL are 'Cross-Validation Strategies for Model Selection' (score 0.0000) — completely off-topic. Precision=0."
+  },
+  {
+    "id": "b07",
+    "query": "random forest vs gradient boosting comparison tutorial",
+    "domain": "blog",
+    "relevant_indices": [],
+    "notes": "10 results returned: Hyperparameter Tuning, Model Evaluation, Classification Models, and Gradient Descent — none are about random forest or gradient boosting. Precision=0."
+  },
+  {
+    "id": "b08",
+    "query": "visualising neural network weights and activations",
+    "domain": "blog",
+    "relevant_indices": [4000],
+    "notes": "1/1 result returned and relevant. Same core neural network guide as b01. Very low recall — blog domain severely under-performs."
+  },
+  {
+    "id": "d01",
+    "query": "PyTorch tensor operations autograd backward",
+    "domain": "documentation",
+    "relevant_indices": [7012],
+    "notes": "1/10 relevant. Only torch.tensor (7012) is relevant. The 9x torch.nn.ReLU results (score 0.0291) are not about autograd or backward propagation."
+  },
+  {
+    "id": "d02",
+    "query": "scikit-learn Pipeline fit transform parameters",
+    "domain": "documentation",
+    "relevant_indices": [7903, 7897, 7896, 8368, 8961, 7920, 7916, 7907, 8367, 8971],
+    "notes": "10/10 relevant. sklearn.metrics.score and sklearn.ensemble.Classifier all follow the fit-transform API described in the query."
+  },
+  {
+    "id": "d03",
+    "query": "NumPy array broadcasting reshape indexing",
+    "domain": "documentation",
+    "relevant_indices": [8958, 8953, 8860, 8834, 8813, 8787, 8779, 8776, 8759, 8753],
+    "notes": "10/10 relevant. All results are numpy.reshape documentation entries — directly relevant to array manipulation."
+  },
+  {
+    "id": "d04",
+    "query": "PyTorch DataLoader Dataset batch size shuffle",
+    "domain": "documentation",
+    "relevant_indices": [7012],
+    "notes": "1/3 results relevant. torch.tensor (7012) marginally relevant; torch.nn.MaxPool2d and BatchNorm2d are not about data loading."
+  },
+  {
+    "id": "d05",
+    "query": "scikit-learn cross_val_score GridSearchCV hyperparameter",
+    "domain": "documentation",
+    "relevant_indices": [7063, 8988, 8951, 8931, 8745, 8744, 8730, 8570, 8527, 8524],
+    "notes": "10/10 relevant. cross_val_score (7063) is directly relevant; sklearn.metrics.score entries are relevant to cross-validation scoring context."
+  },
+  {
+    "id": "d06",
+    "query": "NumPy linalg linear algebra matrix operations",
+    "domain": "documentation",
+    "relevant_indices": [8938, 8937, 8927, 8922, 8920, 8912, 8837, 8741, 8709, 8699],
+    "notes": "10/10 relevant. All results are numpy.linalg.solve documentation — exact match to linear algebra query."
+  },
+  {
+    "id": "d07",
+    "query": "PyTorch nn.Module forward method layer definition",
+    "domain": "documentation",
+    "relevant_indices": [7048, 8925, 8914, 8905, 8886, 8833, 8812, 8708, 8346, 8692],
+    "notes": "10/10 relevant. torch.nn.Module (7048) is the top result; torch.nn.Linear entries are directly related nn.Module subclasses."
+  }
+]
